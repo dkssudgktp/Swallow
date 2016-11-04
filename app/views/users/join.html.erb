@@ -1,0 +1,17 @@
+<h1>Users#join</h1>
+<h1>회원가입</h1>
+<%= form_tag join_path do %>
+  이름 :
+  <input type="text" name="name" value=""><br>
+  이메일 :
+  <input type="email" name="email" value=""><br>
+  패스워드 :
+  <input type="password" name="password" value=""><br>
+  패스워드 다시 :
+  <input type="password" name="password_confirmation" ><br>
+  성별 :
+  남자 : <input type="radio" name="gender" value="man">
+  여자 : <input type="radio" name="gender" value="woman"><br>
+
+  <input type="submit" value="회원가입">
+<% end %>
