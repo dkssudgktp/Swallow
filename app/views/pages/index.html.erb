@@ -1,10 +1,10 @@
 <h1>Swallow</h1>
 <h2>pages#index</h2>
 <% if user_signed_in? %>
+  <%= image_tag current_user.profile %><br>
   <%= current_user.name %><br>
   <%= current_user.email %><br>
   <%= current_user.gender %><br>
-  <%= current_user.profile %><br>
   <%= link_to '로그아웃', logout_path, method:'delete' %><br>
 <% else %>
   <%= link_to '로그인', login_path %>
