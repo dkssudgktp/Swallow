@@ -1,6 +1,7 @@
 <h1>Sessions#login</h1>
 <h1>로그인</h1>
 <%= form_tag login_path do %>
+  <%= flash[:alert] %><br>
   이메일
   <input type="email" name="email" value=""><br>
   비밀번호

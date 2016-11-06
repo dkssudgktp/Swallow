@@ -7,6 +7,9 @@ class SessionsController < ApplicationController
     if user && user.authenticate(params[:password])
       log_in(user)
       redirect_to :root
+    else
+      flash.now[:alert] = "이메일 또는 패스워드가 잘못되었습니다."
+      render 'login'
     end
   end
 
