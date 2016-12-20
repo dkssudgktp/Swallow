@@ -1,0 +1,13 @@
+current directory: /Users/HID/Desktop/project/Swallow/path/ruby/2.3.0/gems/json-2.0.2/ext/json
+/Users/HID/.rbenv/versions/2.3.1/bin/ruby -r ./siteconf20161220-1551-3fsp55.rb extconf.rb
+creating Makefile
+
+current directory: /Users/HID/Desktop/project/Swallow/path/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" clean
+
+current directory: /Users/HID/Desktop/project/Swallow/path/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR="
+make: Nothing to be done for `all'.
+
+current directory: /Users/HID/Desktop/project/Swallow/path/ruby/2.3.0/gems/json-2.0.2/ext/json
+make "DESTDIR=" install

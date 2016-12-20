@@ -6,6 +6,26 @@
   <%= current_user.email %><br>
   <%= current_user.gender %><br>
   <%= link_to '로그아웃', logout_path, method:'delete' %><br>
+
+  <%= form_tag '/write', method: 'post' do %>
+    <textarea name="texts" rows="8" cols="80"></textarea>
+    <input type="submit" value="전송">
+  <% end %>
+  <ul>
+    <% @timelines.each do |b| %>
+      <li><%= b.content %></li>
+      <%= form_tag '/comment', methos: 'post' do %>
+        <ul>
+          <% b.comments.each do |p| %>
+            <li><%= p.msg %></li>
+          <% end %>
+        </ul>
+        <input type="hidden" name="timeline_id" value="<%= b.id %>">
+        <input type="text" name="msg">
+        <input type="submit" value="전송">
+      <% end %>
+    <% end %>
+  </ul>
 <% else %>
   <%= link_to '로그인', login_path %>
   <%= link_to '회원가입', join_path %><br>

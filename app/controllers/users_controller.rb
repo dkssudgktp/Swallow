@@ -4,11 +4,9 @@ class UsersController < ApplicationController
 
   def profile_set
     if user_signed_in?
-      
+
     else
       redirect_to :back
-    rescue ActionController::RedirectBackError
-      redirect_to root_path
     end
   end
 
