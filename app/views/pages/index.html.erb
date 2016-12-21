@@ -1,17 +1,26 @@
-<h1>Swallow</h1>
+<%= image_tag 'index.jpeg', width:"70", alt: "Swallow main" %>
+<strong>Swallow<strong>
 <h2>pages#index</h2>
 <% if user_signed_in? %>
-<%= image_tag current_user.profile %><br>
-<%= current_user.name %><br>
-<%= current_user.email %><br>
-<%= current_user.gender %><br>
+<table border="1px solid black" style="border-collapse:collapse;">
+  <tr>
+    <td>
+      <%= image_tag current_user.profile , width:"200", alt:"profile"%>
+    </td>
+    <td>
+      <%= current_user.name %><br>
+      <%= current_user.email %><br>
+      <%= current_user.gender %><br>
+    </td>
+  </tr>
+</table>
 <%= link_to '로그아웃', logout_path, method:'delete' %><br>
 
 <%= form_tag '/write', method: 'post' do %>
 <textarea name="texts" rows="8" cols="80"></textarea>
 <input type="submit" value="전송">
 <% end %>
-<table border="1px solid black">
+<table border="1px solid black" style="border-collapse:collapse;">
     <% @timelines.each do |b| %>
     <tr>
         <td>
@@ -35,4 +44,3 @@
 <%= link_to '로그인', login_path %>
 <%= link_to '회원가입', join_path %><br>
 <% end %>
-<%= image_tag 'index.jpeg' %>
