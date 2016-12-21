@@ -1,10 +1,14 @@
 class TimelineController < ApplicationController
   def create
-    Timeline.create(content: params[:texts])
-    redirect_to :root
+    if user_signed_in?
+      Timeline.create(name: current_user.name, content: params[:texts])
+      redirect_to :root
+    end
   end
   def comment
-    Comment.create(timeline_id: params[:timeline_id], msg: params[:msg])
-    redirect_to :root
+    if user_signed_in?
+      Comment.create(name: current_user.name, timeline_id: params[:timeline_id], msg: params[:msg])
+      redirect_to :root
+    end
   end
 end

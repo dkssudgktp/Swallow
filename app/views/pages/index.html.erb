@@ -1,33 +1,38 @@
 <h1>Swallow</h1>
 <h2>pages#index</h2>
 <% if user_signed_in? %>
-  <%= image_tag current_user.profile %><br>
-  <%= current_user.name %><br>
-  <%= current_user.email %><br>
-  <%= current_user.gender %><br>
-  <%= link_to '로그아웃', logout_path, method:'delete' %><br>
+<%= image_tag current_user.profile %><br>
+<%= current_user.name %><br>
+<%= current_user.email %><br>
+<%= current_user.gender %><br>
+<%= link_to '로그아웃', logout_path, method:'delete' %><br>
 
-  <%= form_tag '/write', method: 'post' do %>
-    <textarea name="texts" rows="8" cols="80"></textarea>
-    <input type="submit" value="전송">
-  <% end %>
-  <ul>
+<%= form_tag '/write', method: 'post' do %>
+<textarea name="texts" rows="8" cols="80"></textarea>
+<input type="submit" value="전송">
+<% end %>
+<table border="1px solid black">
     <% @timelines.each do |b| %>
-      <li><%= b.content %></li>
-      <%= form_tag '/comment', methos: 'post' do %>
-        <ul>
-          <% b.comments.each do |p| %>
-            <li><%= p.msg %></li>
-          <% end %>
-        </ul>
-        <input type="hidden" name="timeline_id" value="<%= b.id %>">
-        <input type="text" name="msg">
-        <input type="submit" value="전송">
-      <% end %>
+    <tr>
+        <td>
+            [<%= b.name %>] <%= b.content %>
+            <%= form_tag '/comment', methos: 'post' do %>
+            <ul>
+                <% b.comments.each do |p| %>
+                <li>[<%= p.name %>] <%= p.msg %></li>
+                <% end %>
+
+            <input type="hidden" name="timeline_id" value="<%= b.id %>">
+            <li><input type="text" name="msg"></li>
+            <input type="submit" value="전송">
+            <% end %>
+          </ul>
+        </tr>
+    </td>
     <% end %>
-  </ul>
+</table>
 <% else %>
-  <%= link_to '로그인', login_path %>
-  <%= link_to '회원가입', join_path %><br>
+<%= link_to '로그인', login_path %>
+<%= link_to '회원가입', join_path %><br>
 <% end %>
 <%= image_tag 'index.jpeg' %>

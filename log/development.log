@@ -546,3 +546,1825 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 34ms (Views: 30.9ms | ActiveRecord: 0.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:40:22 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.3ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.4ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (254.0ms)
+Completed 200 OK in 344ms (Views: 320.7ms | ActiveRecord: 3.6ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 08:40:27 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"YiOtGUe3egfo4HRb6ThnT0iozmjQiakuRNnwqbkKdjLeDR1zSI2QwT/LskF4ckt1i/vyrQsu98ZZ4hzm34CREQ=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:40:27 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 46ms (Views: 40.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 08:40:31 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 45ms (Views: 40.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 08:40:33 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 55ms (Views: 51.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 08:40:39 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4r6HNQV2kTLN8LDv/KV/F5WQQqOtFHKY58NYomMOR0Xt4Q6ZtB5dA/oYQZSZXNOfO5FWiI9ID5kpIl7SdH1tfg==", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 73ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:40:39 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 42ms (Views: 40.1ms | ActiveRecord: 0.4ms)
+
+
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[35m (1.2ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161104054108)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "gender" varchar, "profile" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161104054108"]]
+  [1m[35m (0.9ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTimelines (20161220230930)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "timelines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220230930"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20161220231121)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "timeline_id" integer, "msg" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220231121"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-20 23:41:06 UTC], ["updated_at", 2016-12-20 23:41:06 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 08:41:15 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"9wB7T2qozL2Y/0aWa3UeZDHDoPc6c7IdKzYIN2ezzIxLLsslZZIme0/UgIz6PzJe8pCcMuHU7PU2DeR4ATkrrw=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:41:15 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 23.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 08:43:37 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 27ms (Views: 24.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 08:43:43 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VX6w1feBxLYdTabNod90gFXc53lSq1YLMMARiT7SkClaITl5RukIhyqlV7bEJtgI+93zUnD3Kwr+IRf5KaG6Eg==", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 24ms (Views: 22.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 08:43:44 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 102ms (Views: 97.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:43:45 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 151ms (Views: 141.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 08:43:47 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 43ms (Views: 40.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/join" for 127.0.0.1 at 2016-12-21 08:44:01 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MzniJsgE/NowFL4vk1iLwxjxKKqO8dDXVX97NLNC2+v2DKz+uQGIdod3wo43u+q6oE/mTaQBveejYCM/x9DDnw==", "name"=>"김형진", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"man"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "password_digest", "gender", "profile", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "hellomydir@gmail.com"], ["name", "김형진"], ["password_digest", "$2a$10$mTin5d7ixDCwHTsvtzuhsOrQW8Yl05xvy3DftLLP7MnLxeDNF7Mwy"], ["gender", "man"], ["profile", "bagic_man.jpg"], ["created_at", 2016-12-20 23:44:01 UTC], ["updated_at", 2016-12-20 23:44:01 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 87ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:44:01 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 08:44:03 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.3ms)
+Completed 200 OK in 41ms (Views: 38.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 08:44:10 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"t7DOPVmPoFLUvaKKwTnuED7Otznzp1JPTWFPj2MMiCS470eR6OdsY+NVU/GkwEKYkM+jEtH7L06DgEn/dH+iHw==", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 75ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:44:10 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  Rendered pages/index.html.erb within layouts/application (5.4ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 08:50:24 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"6vUm5yZh5cxhX2RSI6kvqpd/pdev9kk+aS97dGMNtRdW25aNKVsPCrZ0okiy4wOQVCyZEnRRF9Z0FJc7BYdSNA=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:50:24 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 08:50:47 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 36ms (Views: 32.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/join" for 127.0.0.1 at 2016-12-21 08:51:06 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4UwajQVkW2hiBDmZoN2m8xU9uI+0UPH7X33TWKqN9eEkeVRVdGEvxNVnRTgEPseKrYN2aJ6gnMupYotT3h/tlQ==", "name"=>"김예원", "email"=>"dkssudgktp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"woman"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "password_digest", "gender", "profile", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "dkssudgktp@gmail.com"], ["name", "김예원"], ["password_digest", "$2a$10$6fM7kK2zteWqVuIDNyCyA.ndHcU8oh.OkWPWDVB8QXebrjC/x0kOO"], ["gender", "woman"], ["profile", "bagic_woman.jpg"], ["created_at", 2016-12-20 23:51:06 UTC], ["updated_at", 2016-12-20 23:51:06 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 76ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:51:06 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 21.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 08:51:08 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 45ms (Views: 43.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 08:51:12 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0GR003u9x7P+9uSccqgxwW1hAQ+7YNsvRrJL1ShiVGDfO/1/ytULgskeFecXUZ1Jw2AVJJk8pi6IU02lPxF+Ww==", "email"=>"dkssudgktp@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 72ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:51:13 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  Rendered pages/index.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 24ms (Views: 22.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:53:41 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  Rendered pages/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:53:55 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  Rendered pages/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 25ms (Views: 22.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:55:07 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 23ms (Views: 21.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 08:55:10 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 08:55:18 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VFQ2+mB8jV1CVIaQlzDL2EpQo8dR4gDR7Gqgp0TI38wxrOszdygAiyH0b3qDNQZh6kHD32HXYmFBhSFc2gSQYg==", "email"=>"Hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 76ms (ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:55:18 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  Rendered pages/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 08:55:27 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nEP1xp51BKY4qt97dT8Aym9mi7ipPCB8Oo/3lY8Omzqan4GWuGASP13OJpk+id/1D/gfdbwm4bYc3YtsAwmBTQ==", "texts"=>"난 김형진이야\r\n"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "timelines" ("content", "created_at", "updated_at") VALUES (?, ?, ?)[0m  [["content", "난 김형진이야\r\n"], ["created_at", 2016-12-20 23:55:27 UTC], ["updated_at", 2016-12-20 23:55:27 UTC]]
+  [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 9ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:55:27 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 34ms (Views: 31.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 08:55:30 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 09:10:15 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.3ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (229.6ms)
+Completed 200 OK in 304ms (Views: 280.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 09:22:35 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.3ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (227.9ms)
+Completed 200 OK in 297ms (Views: 277.6ms | ActiveRecord: 3.1ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 09:22:42 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:3:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.8ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.7ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (78.7ms)
+Started POST "/write" for 127.0.0.1 at 2016-12-21 09:23:42 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 1.3ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:3:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.9ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.6ms)
+Started POST "/write" for 127.0.0.1 at 2016-12-21 09:24:49 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:3:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.1ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (62.1ms)
+Started POST "/write" for 127.0.0.1 at 2016-12-21 09:27:08 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 1.2ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:3:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.2ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.5ms)
+Started POST "/write" for 127.0.0.1 at 2016-12-21 09:28:15 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:4:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.0ms)
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:24:54 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.7ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:4:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (61.4ms)
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:25:47 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 1.5ms)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'name' for Timeline.):
+  
+app/controllers/timeline_controller.rb:4:in `create'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.8ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.3ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.9ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ?[0m  [["key", :environment]]
+DEPRECATION WARNING: Passing #original_exception is deprecated and has no effect. Exceptions will automatically capture the original exception. (called from load at /Users/HID/.rbenv/versions/2.3.1/bin/rake:23)
+  [1m[35m (1.3ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateUsers (20161104054108)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "gender" varchar, "profile" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161104054108"]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateTimelines (20161220230930)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTimelines (20161220230930)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.3ms)[0m  [1m[31mrollback transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreateTimelines (20161220230930)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "timelines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220230930"]]
+  [1m[35m (8.1ms)[0m  [1m[36mcommit transaction[0m
+Migrating to CreateComments (20161220231121)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.5ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "timeline_id" integer, "name" varchar, "msg" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220231121"]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", 2016-12-21 01:28:03 UTC], ["updated_at", 2016-12-21 01:28:03 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:28:10 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.1ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#create, rendering head :no_content
+Completed 204 No Content in 45ms (ActiveRecord: 0.5ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:28:13 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:28:13 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#create, rendering head :no_content
+Completed 204 No Content in 43ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:28:13 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#create, rendering head :no_content
+Completed 204 No Content in 41ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:28:14 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "texts"=>"안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#create, rendering head :no_content
+Completed 204 No Content in 40ms (ActiveRecord: 0.1ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:28:16 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "timeline_id"=>"1", "msg"=>"sasd"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#comment, rendering head :no_content
+Completed 204 No Content in 46ms (ActiveRecord: 0.2ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:28:17 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg==", "timeline_id"=>"1", "msg"=>"sasd"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+No template found for TimelineController#comment, rendering head :no_content
+Completed 204 No Content in 44ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:28:17 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (3.6ms)
+Completed 200 OK in 135ms (Views: 131.2ms | ActiveRecord: 0.0ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 10:28:20 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"+i1rA8GvruJ1e25Y6ArEm5xGXC5ROjJrQwEzOOcEN4lGA9tpzpVEJKJQqEJ5QOihXxVg64qdbINeOt93gY7Qqg=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:28:20 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 26ms (Views: 21.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 10:28:22 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 39ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/join" for 127.0.0.1 at 2016-12-21 10:28:45 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"EUDMNFh/fNut1q2RlYKojdV2AyNzl1s7Be4+BGet9f/UdYLsKXoIdxq10TAxYcn0bcjNxFlnNgvz8WYPEz/tiw==", "name"=>"김예원", "email"=>"dkssudgktp@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"woman"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "password_digest", "gender", "profile", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "dkssudgktp@gmail.com"], ["name", "김예원"], ["password_digest", "$2a$10$1F7c/zS6wrdzDiJpaIo1gebAr7yUG.cz51tzgV1Jm4MtHSUu4YVY."], ["gender", "woman"], ["profile", "bagic_woman.jpg"], ["created_at", 2016-12-21 01:28:45 UTC], ["updated_at", 2016-12-21 01:28:45 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 80ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:28:45 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:28:52 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 40ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 10:28:58 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"bwdOZcvoVwJYQ2huF31OtjkJgljuIg9pFm6ZopYI3D9gWMfJeoCbM2+rmRVyhOI+lwiWc8x+cmjYj5/SgXv2BA==", "email"=>"dkssudgktp@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 71ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:28:58 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  Rendered pages/index.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 25ms (Views: 23.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:29:08 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"T5x9NlQT0mOsGLj95HnTQlQZkGgZ/WxjjPAEK1zh7u/zss1cWyk4pXszfud1M/94l0qsrcJaMouRy+hkOmsJzA==", "texts"=>"안녕 난 김예원이야"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "timelines" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "김예원"], ["content", "안녕 난 김예원이야"], ["created_at", 2016-12-21 01:29:08 UTC], ["updated_at", 2016-12-21 01:29:08 UTC]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 15ms (ActiveRecord: 9.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:29:08 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 42ms (Views: 39.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:13 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 33ms (Views: 30.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:14 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:24 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:25 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 37ms (Views: 35.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:25 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:26 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 38ms (Views: 36.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:26 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (6.2ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 10:30:35 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"vdY39XLZx0piqD6LhrR/bKXQbc0nCB0zW79DAYW3asS7CkOlVMzR0wfMx2nNAqBTxU75ADIS3Pl97T/4CbBwsw=="}
+Can't verify CSRF token authenticity.
+Completed 422 Unprocessable Entity in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::InvalidAuthenticityToken (ActionController::InvalidAuthenticityToken):
+  
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/request_forgery_protection.rb:195:in `handle_unverified_request'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/request_forgery_protection.rb:223:in `handle_unverified_request'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/request_forgery_protection.rb:218:in `verify_authenticity_token'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:382:in `block in make_lambda'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:169:in `block (2 levels) in halting'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/abstract_controller/callbacks.rb:12:in `block (2 levels) in <module:Callbacks>'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:170:in `block in halting'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:454:in `block in call'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:454:in `each'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:454:in `call'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:101:in `__run_callbacks__'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:750:in `_run_process_action_callbacks'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:90:in `run_callbacks'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/abstract_controller/callbacks.rb:19:in `process_action'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/rescue.rb:20:in `process_action'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/instrumentation.rb:32:in `block in process_action'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `block in instrument'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/notifications/instrumenter.rb:21:in `instrument'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/notifications.rb:164:in `instrument'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/instrumentation.rb:30:in `process_action'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal/params_wrapper.rb:248:in `process_action'
+path/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/abstract_controller/base.rb:126:in `process'
+path/ruby/2.3.0/gems/actionview-5.0.0.1/lib/action_view/rendering.rb:30:in `process'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal.rb:190:in `dispatch'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_controller/metal.rb:262:in `dispatch'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/routing/route_set.rb:50:in `dispatch'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/routing/route_set.rb:32:in `serve'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/journey/router.rb:39:in `block in serve'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/journey/router.rb:26:in `each'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/journey/router.rb:26:in `serve'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/routing/route_set.rb:725:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/etag.rb:25:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/conditional_get.rb:38:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/head.rb:12:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:222:in `context'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/session/abstract/id.rb:216:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/cookies.rb:613:in `call'
+path/ruby/2.3.0/gems/activerecord-5.0.0.1/lib/active_record/migration.rb:552:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/callbacks.rb:38:in `block in call'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:97:in `__run_callbacks__'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:750:in `_run_call_callbacks'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/callbacks.rb:90:in `run_callbacks'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/callbacks.rb:36:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:49:in `call'
+path/ruby/2.3.0/gems/web-console-3.4.0/lib/web_console/middleware.rb:135:in `call_app'
+path/ruby/2.3.0/gems/web-console-3.4.0/lib/web_console/middleware.rb:28:in `block in call'
+path/ruby/2.3.0/gems/web-console-3.4.0/lib/web_console/middleware.rb:18:in `catch'
+path/ruby/2.3.0/gems/web-console-3.4.0/lib/web_console/middleware.rb:18:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+path/ruby/2.3.0/gems/sprockets-rails-3.2.0/lib/sprockets/rails/quiet_assets.rb:13:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/static.rb:136:in `call'
+path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (2.6ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+  Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (66.4ms)
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:30:40 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (3.5ms)
+Completed 200 OK in 55ms (Views: 51.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 10:30:42 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 41ms (Views: 39.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/join" for 127.0.0.1 at 2016-12-21 10:31:02 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ocDtVb0ogeKfzmJQBhcTjVtZnf4vKh/awPYqcg1JXxxmUZ1+10ErsX5MtjZvMeTddNZYgOgoU7/avnCCK6af1Q==", "name"=>"김형진", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"man"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "password_digest", "gender", "profile", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "hellomydir@gmail.com"], ["name", "김형진"], ["password_digest", "$2a$10$LzS/EzIQSdp67nBKR5rEGeebatZGuCfhy2jXk4HWTFFsAFY1gLK2i"], ["gender", "man"], ["profile", "bagic_man.jpg"], ["created_at", 2016-12-21 01:31:02 UTC], ["updated_at", 2016-12-21 01:31:02 UTC]]
+  [1m[35m (8.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 84ms (ActiveRecord: 8.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:31:02 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:31:04 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 31ms (Views: 29.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 10:31:08 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DJAkRftXq5q6FpAAZFIziK2UYg/GvdauhHGq2+HC+zESFoaNmHOM/TrNNDWeTcKCBG7VkGv3uPFCu7SrYW5RQw==", "email"=>"Hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 93ms (Views: 19.3ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 10:31:18 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"r8iQT0/wa0Gc/n2F1gfperhqFzZ6bzqneSCe6Reqn41dL6Ip6rhcdvV9sxv/92m6pJj8xEHzOl9GwFgt0XUEuA==", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 74ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:31:18 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.0ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:31:25 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w0RxidStagLO2WgtYqKW4WKzAJuuM6zXtILJ/eLFqZoxo0PvceVdNadaprNLUhYhfkHraZWvrC+LYg85JBoyrw==", "timeline_id"=>"1", "msg"=>"예원아 안녕"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 1], ["name", "김형진"], ["msg", "예원아 안녕"], ["created_at", 2016-12-21 01:31:25 UTC], ["updated_at", 2016-12-21 01:31:25 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 24ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:31:25 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 28ms (Views: 26.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:31:28 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.2ms)
+Completed 200 OK in 24ms (Views: 22.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:31:36 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  Rendered pages/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 25ms (Views: 23.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:32:43 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"XdzT34N2sY9eftccJHTrxZE26r1Kyfl5WzP0E96W0ITh8mO1jExbSYlVEQa1Psf/UmXWeJFup5FGCBhcuBw3pw==", "texts"=>"오늘은 집에서 뭐하지?"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "timelines" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "김예원"], ["content", "오늘은 집에서 뭐하지?"], ["created_at", 2016-12-21 01:32:43 UTC], ["updated_at", 2016-12-21 01:32:43 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:32:43 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  Rendered pages/index.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 25ms (Views: 23.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:32:52 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  Rendered pages/index.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 25ms (Views: 23.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:33:00 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"VuxDG3SQBfiFNBjuVFunYGy8aMPrXfms4MV3GeMdRSekC3F90dgyz+y31nB9qyegcE6DMdDB+VTfJbHdJcLeEg==", "timeline_id"=>"2", "msg"=>"집에서 공부나해"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 2], ["name", "김형진"], ["msg", "집에서 공부나해"], ["created_at", 2016-12-21 01:33:00 UTC], ["updated_at", 2016-12-21 01:33:00 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 5ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:00 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  Rendered pages/index.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 36ms (Views: 32.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:33:09 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ESUlnDBfSNc6nru6XqeB3MkIho/Et5M/Eu4i7kSzyVHjwhf6lRd/4FMddSR3VwEc1fptff8rk8ctDuQqgmxSZA==", "texts"=>"하하 정말 재미있다"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "timelines" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "김형진"], ["content", "하하 정말 재미있다"], ["created_at", 2016-12-21 01:33:09 UTC], ["updated_at", 2016-12-21 01:33:09 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:09 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.3ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  Rendered pages/index.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 39ms (Views: 36.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:11 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  Rendered pages/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 1.0ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:33:13 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ZqcS2dOD9ljLKfu9pi7bCs7igBVyPUFMSu+ZAMwpqBvaiaKz3LkcnhwCPac3ZPcwDbG80KmaH6RX1HVPqqNPOA==", "timeline_id"=>"3", "msg"=>"굿"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 3], ["name", "김예원"], ["msg", "굿"], ["created_at", 2016-12-21 01:33:13 UTC], ["updated_at", 2016-12-21 01:33:13 UTC]]
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:13 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  Rendered pages/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 32ms (Views: 30.2ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 10:33:21 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"O4dZ4hdo1+MepGfSj8iUKQbhrpJoYVcKEtVsvaCG77LJYGuEsiDg1HcnqUymOBTpGhNFYFP9V/ItNap5Zll0hw=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:21 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 25ms (Views: 23.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 10:33:23 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:27 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  Rendered pages/index.html.erb within layouts/application (10.9ms)
+Completed 200 OK in 33ms (Views: 30.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:33:48 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 30ms (Views: 28.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:33:51 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 38ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 10:33:54 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 40ms (Views: 37.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/join" for 127.0.0.1 at 2016-12-21 10:34:04 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"lfdR26WTW7TGblOkCJ0o4BC8meqeD2x07SjzqSWJcBNSZiHwz/rx5yfsh8Jhu9+wPzNclFkNIBH3YKlZA2aw2g==", "name"=>"asd", "email"=>"asd@ada.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"man"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[31mrollback transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 91ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:34:04 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 24ms (Views: 22.5ms | ActiveRecord: 0.1ms)
+
+
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:37:29 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"suLgf3nNs8DOw7df2AWmtp96iJZ2DV2MacCSYOKGASoOzFAVdvdZBhnocUVJT4qMXCm0U62qA2R0+34vhAzmCQ==", "texts"=>"민석이 개못생"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "timelines" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "김예원"], ["content", "민석이 개못생"], ["created_at", 2016-12-21 01:37:29 UTC], ["updated_at", 2016-12-21 01:37:29 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:37:29 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 33ms (Views: 31.2ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:37:37 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 38ms (Views: 35.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 10:37:48 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"owmpCDEqvp+S11150Hfbsdx57p/suqiTP3bq9PgQv/K9jwvAUg6Z+BIM+UwqaCq7dYNZAEHwxsz5vPSEeLwVgA==", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 75ms (ActiveRecord: 0.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:37:48 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:37:54 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"i4kXF8wBlWx0ePeje8m5OSPSwhlA0YPB2Tb5BO0nY/95biVxaUmiWx37OT1SOTn5PyAp63tNgznm1j/AK/j4yg==", "timeline_id"=>"4", "msg"=>"sad"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 4], ["name", "김형진"], ["msg", "sad"], ["created_at", 2016-12-21 01:37:54 UTC], ["updated_at", 2016-12-21 01:37:54 UTC]]
+  [1m[35m (9.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 13ms (ActiveRecord: 9.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:37:54 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.5ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 33ms (Views: 31.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:46:28 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:46:41 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xM4NDOK9mydydEXSNU6r4AWOs2+cmDJhA+WW+1mShjd44L1m7Ydx4aVfg8ikBIfaxt2Pqkc/bIke3nq0PxhhFA==", "timeline_id"=>"4", "msg"=>"코건 좀 인정"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+  [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 4], ["name", "김예원"], ["msg", "코건 좀 인정"], ["created_at", 2016-12-21 01:46:41 UTC], ["updated_at", 2016-12-21 01:46:41 UTC]]
+  [1m[35m (0.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 6ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:46:41 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 29ms (Views: 27.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:46:59 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 34ms (Views: 31.7ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 10:50:36 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"6mgbzeZltM/FSDrhbUyqgrr0Gu/z/j3CApbRbx8zJCxWRqun6V9eCRJj/Pv8Boa4eacmKihZYyofrT0gebnDDw=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:50:36 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 23ms (Views: 21.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 10:50:43 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 47ms (Views: 44.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/join" for 127.0.0.1 at 2016-12-21 10:51:43 +0900
+Processing by UsersController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"wwkGzgpqDWOkD2Hgu9DAWkwBWo3Dl4zVt9oEU3v1lCcGPEgWe295zxNsHUEfM6Ej9L+Uauln4eVBxVxYD2eMUw==", "name"=>"노희준", "email"=>"hobbit9882@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "gender"=>"man"}
+  [1m[35m (0.3ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "users" ("email", "name", "password_digest", "gender", "profile", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "hobbit9882@gmail.com"], ["name", "노희준"], ["password_digest", "$2a$10$7.y.y1a3LK8ycdfiZDp9duzulCvLW7pq6EWi9fJf6NIcZ4PaROsAu"], ["gender", "man"], ["profile", "bagic_man.jpg"], ["created_at", 2016-12-21 01:51:43 UTC], ["updated_at", 2016-12-21 01:51:43 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 78ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:51:43 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (3.4ms)
+Completed 200 OK in 27ms (Views: 25.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:51:48 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 38ms (Views: 35.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 10:51:54 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ge+lMvhiOVpDm7aNZyYDpfeS0xbno3kQnoLXsOzwBG6OsCyeSQr1a3RzR/YC368tWZPHPcX/BBFQY9HA+4MuVQ==", "email"=>"hobbit9882@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 72ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:51:54 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.3ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  Rendered pages/index.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 35ms (Views: 33.1ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/write" for 127.0.0.1 at 2016-12-21 10:52:07 +0900
+Processing by TimelineController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Q7ln7o7VsqX2nArNRA9/8jq0bNdA/lJHwtm0TG3+NW//l9eEge9YYyG3zNfVRVPI+edQEptZDK/f4lgDC3TSTA==", "texts"=>"fuckyou\r\n"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "timelines" ("name", "content", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["name", "노희준"], ["content", "fuckyou\r\n"], ["created_at", 2016-12-21 01:52:07 UTC], ["updated_at", 2016-12-21 01:52:07 UTC]]
+  [1m[35m (8.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 12ms (ActiveRecord: 9.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:52:07 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (11.4ms)
+Completed 200 OK in 36ms (Views: 33.4ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:52:18 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (13.3ms)
+Completed 200 OK in 35ms (Views: 32.3ms | ActiveRecord: 0.8ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 10:52:26 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"w+MEluA2/naztsIENEVWWqAm11B3NFTUy0nPCmceUzkxBDbwRX7JQdo1DJodtdaavNQ8okyoVCz0qQnOocHIDA==", "timeline_id"=>"5", "msg"=>"희준아 아니야"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 5], ["name", "김형진"], ["msg", "희준아 아니야"], ["created_at", 2016-12-21 01:52:26 UTC], ["updated_at", 2016-12-21 01:52:26 UTC]]
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:52:26 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 35ms (Views: 33.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:52:27 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 39ms (Views: 34.0ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:52:34 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.7ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.7ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (36.5ms)
+Completed 200 OK in 70ms (Views: 62.0ms | ActiveRecord: 2.4ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 10:52:37 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"YHnXJW5WiH/H8gK5O59CnPxJ08hmcyZl/OjPBeN9WZuSnuVDyx6/SK5xzCcSb8Jc4Ls4Ol3vJp3DCAnBJaLCrg=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:52:37 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (4.4ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/join" for 127.0.0.1 at 2016-12-21 10:52:40 +0900
+Processing by UsersController#join as HTML
+  Rendering users/join.html.erb within layouts/application
+  Rendered users/join.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 10:56:59 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 24ms (Views: 22.0ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 10:57:03 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 44ms (Views: 41.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 11:39:29 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (2.6ms)
+Completed 200 OK in 48ms (Views: 46.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 11:39:37 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"S7XL56o/W/yGryfvJQDZ7HgkUWvZYSh5IF2rgQO+8iMZ1G12Tc1KoMp8pHIfY3dprRP1f1mzYaohZxYlGAqQIg==", "email"=>"hellomydir@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 75ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:39:38 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hellomydir@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 31ms (Views: 28.5ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2016-12-21 11:39:43 +0900
+Processing by SessionsController#delete as HTML
+  Parameters: {"authenticity_token"=>"uHIOLo7m/uUWZbd24ATwTVWY9zKsf/MTC8wmTdYCu+RzTrJdYkWp+7tVd6gE/2AM4iVgzJanC6qoKfyKXLTHfw=="}
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:39:43 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+  Rendered pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2016-12-21 11:39:44 +0900
+Processing by SessionsController#login as HTML
+  Rendering sessions/login.html.erb within layouts/application
+  Rendered sessions/login.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2016-12-21 11:39:54 +0900
+Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MwlKVLN6KdwBrbnLu5gGbnY+RW7AtlfhKMg0LHaUyAlhaOzFVIg4gE1+OlaB+6jrownhekBkHjIp8omIbSCqCA==", "email"=>"dkssudgktp@gmail.com", "password"=>"[FILTERED]"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 77ms (ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:39:54 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 28ms (Views: 26.2ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/comment" for 127.0.0.1 at 2016-12-21 11:40:20 +0900
+Processing by TimelineController#comment as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"u1hj2/lgWixe64QS1ik7hU1fLLKVb4mnegO1wPkqcwRwZN+oFcMNMvPbRMwy0qvE+uK7TK+3cR7Z5m8Hc5wPnw==", "timeline_id"=>"5", "msg"=>"난 저런 남자 싫던데"}
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT  "timelines".* FROM "timelines" WHERE "timelines"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "comments" ("timeline_id", "name", "msg", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["timeline_id", 5], ["name", "김예원"], ["msg", "난 저런 남자 싫던데"], ["created_at", 2016-12-21 02:40:20 UTC], ["updated_at", 2016-12-21 02:40:20 UTC]]
+  [1m[35m (8.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://127.0.0.1:3000/
+Completed 302 Found in 14ms (ActiveRecord: 9.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:40:20 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 31ms (Views: 29.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:45:07 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 27ms (Views: 25.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:45:46 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (8.8ms)
+Completed 200 OK in 37ms (Views: 35.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 11:47:29 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "hobbit9882@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.1ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.3ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.2ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (12.8ms)
+Completed 200 OK in 39ms (Views: 35.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2016-12-21 12:08:57 +0900
+Processing by PagesController#index as HTML
+  Rendering pages/index.html.erb within layouts/application
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "dkssudgktp@gmail.com"], ["LIMIT", 1]]
+  [1m[36mTimeline Load (0.2ms)[0m  [1m[34mSELECT "timelines".* FROM "timelines"[0m
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 1]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 2]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 3]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 4]]
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."timeline_id" = ?[0m  [["timeline_id", 5]]
+  Rendered pages/index.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 45ms (Views: 42.1ms | ActiveRecord: 0.7ms)
+
+
