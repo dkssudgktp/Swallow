@@ -1,14 +1,87 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Swallow</title>
-    <%= csrf_meta_tags %>
+    <head>
+        <title>Swallow</title>
+        <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
-  </head>
+        <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+        <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
-  <body>
-    <%= yield %>
-  </body>
+        <!-- bootstrap CDN -->
+
+        <!-- 합쳐지고 최소화된 최신 CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+
+        <!-- 부가적인 테마 -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
+
+        <!-- 합쳐지고 최소화된 최신 자바스크립트 -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    </head>
+
+    <body>
+        <% if user_signed_in? %>
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <%= link_to 'Swallow', root_path, class: "navbar-brand" %>
+                    <a class="navbar-brand" href="#page-top">Swallow</a>
+                </div>
+
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <%= link_to 'logout', logout_path, method:'delete' %>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <% else %>
+        <!-- Navigation -->
+        <nav id="mainNav" class="navbar navbar-default navbar-fixed-top navbar-custom">
+            <div class="container">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header page-scroll">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                        <span class="sr-only">Toggle navigation</span>
+                        Menu
+                        <i class="fa fa-bars"></i>
+                    </button>
+                    <%= link_to 'Swallow', root_path, class: "navbar-brand" %>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="hidden">
+                            <a href="#page-top"></a>
+                        </li>
+                        <li class="page-scroll">
+                            <%= link_to 'login', login_path %>
+                        </li>
+                        <li class="page-scroll">
+                            <%= link_to 'join', join_path %>
+                        </li>
+                    </ul>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <% end %>
+
+        <%= yield %>
+    </body>
 </html>

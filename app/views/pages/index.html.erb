@@ -1,20 +1,18 @@
-<%= image_tag 'index.jpeg', width:"70", alt: "Swallow main" %>
-<strong>Swallow<strong>
-<h2>pages#index</h2>
 <% if user_signed_in? %>
-<table border="1px solid black" style="border-collapse:collapse;">
-  <tr>
-    <td>
-      <%= image_tag current_user.profile , width:"200", alt:"profile"%>
-    </td>
-    <td>
-      <%= current_user.name %><br>
-      <%= current_user.email %><br>
-      <%= current_user.gender %><br>
-    </td>
-  </tr>
-</table>
-<%= link_to '로그아웃', logout_path, method:'delete' %><br>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <%= image_tag current_user.profile , width:"50%", alt:"profile"%>
+                <div class="intro-text">
+                    <span class="name"><%= current_user.name %></span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+  <%= current_user.email %><br>
+  <%= current_user.gender %><br>
 
 <%= form_tag '/write', method: 'post' do %>
 <textarea name="texts" rows="8" cols="80"></textarea>
@@ -24,23 +22,145 @@
     <% @timelines.each do |b| %>
     <tr>
         <td>
-            [<%= b.name %>] <%= b.content %>
+            [<%= b.name %>]
+            <%= b.content %>
             <%= form_tag '/comment', methos: 'post' do %>
             <ul>
                 <% b.comments.each do |p| %>
-                <li>[<%= p.name %>] <%= p.msg %></li>
+                <li>[<%= p.name %>]
+                    <%= p.msg %></li>
                 <% end %>
 
-            <input type="hidden" name="timeline_id" value="<%= b.id %>">
-            <li><input type="text" name="msg"></li>
-            <input type="submit" value="전송">
-            <% end %>
-          </ul>
+                <input type="hidden" name="timeline_id" value="<%= b.id %>">
+                <li><input type="text" name="msg"></li>
+                <input type="submit" value="전송">
+                <% end %>
+            </ul>
         </tr>
     </td>
     <% end %>
 </table>
 <% else %>
-<%= link_to '로그인', login_path %>
-<%= link_to '회원가입', join_path %><br>
+<header>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <%= image_tag 'index.jpeg', width:"50%", class: "img-responsive", alt: "Swallow main" %>
+                <div class="intro-text">
+                    <span class="name">Start Swallow</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>로그인</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                <%= form_tag login_path do %>
+                <%= flash[:alert] %><br>
+
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Email</label>
+                        <input type="email" class="form-control" placeholder="이메일" id="email" name="email" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>Password</label>
+                        <input type="password" class="form-control" placeholder="비밀번호" id="password" name = "password" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-success btn-lg">로그인</button>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2>회원가입</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19. -->
+                <!-- The form should work on most web servers, but if the form is not working you may need to configure your web server differently. -->
+                <%= form_tag join_path do %>
+                <%= flash[:alert] %><br>
+
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>이름</label>
+                        <input type="text" class="form-control" placeholder="이름" id="name" name="name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>이메일</label>
+                        <input type="email" class="form-control" placeholder="이메일" id="email" name="email" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>비밀번호</label>
+                        <input type="password" class="form-control" placeholder="비밀번호" id="password" name="password" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>비밀번호 확인</label>
+                        <input type="password" class="form-control" placeholder="비밀번호 확인" id="password_confirmation" name="password_confirmation" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>성별</label>
+                        남자 : <input type="radio" name="gender" value="man" required data-validation-required-message="Please enter your email address.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="row control-group">
+                    <div class="form-group col-xs-12 floating-label-form-group controls">
+                        <label>성별</label>
+                        여자 : <input type="radio" name="gender" value="woman" required data-validation-required-message="Please enter your email address."><br>
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <br>
+                <div id="success"></div>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-success btn-lg">로그인</button>
+                    </div>
+                </div>
+                <% end %>
+            </div>
+        </div>
+    </div>
+</section>
 <% end %>

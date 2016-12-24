@@ -13,6 +13,7 @@
 ActiveRecord::Schema.define(version: 20161220231121) do
 
   create_table "comments", force: :cascade do |t|
+    t.string   "id_num"
     t.integer  "timeline_id"
     t.string   "name"
     t.text     "msg"
@@ -21,6 +22,7 @@ ActiveRecord::Schema.define(version: 20161220231121) do
   end
 
   create_table "timelines", force: :cascade do |t|
+    t.string   "id_num"
     t.string   "name"
     t.text     "content"
     t.datetime "created_at", null: false
