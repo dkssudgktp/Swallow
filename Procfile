@@ -1,1 +1,2 @@
-https://github.com/dkssudgktp/Swallow.git
+web: bundle exec rails server -p 60005
+
