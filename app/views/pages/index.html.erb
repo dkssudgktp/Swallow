@@ -11,35 +11,63 @@
         </div>
     </div>
 </header>
-  <%= current_user.email %><br>
-  <%= current_user.gender %><br>
-
-<%= form_tag '/write', method: 'post' do %>
-<textarea name="texts" rows="8" cols="80"></textarea>
-<input type="submit" value="전송">
-<% end %>
-<table border="1px solid black" style="border-collapse:collapse;">
-    <% @timelines.each do |b| %>
-    <tr>
-        <td>
-            [<%= b.name %>]
-            <%= b.content %>
-            <%= form_tag '/comment', methos: 'post' do %>
-            <ul>
-                <% b.comments.each do |p| %>
-                <li>[<%= p.name %>]
-                    <%= p.msg %></li>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>타임라인</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <label>timelinepost</label>
+                <%= form_tag '/write', method: 'post' do %>
+                <input type="text" class="form-control" placeholder="오늘은 무순 일이 있었나요?" id="texts" name="texts" required data-validation-required-message="Please enter your email address.">
+                <p class="help-block text-danger"></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group col-xs-12">
+                <button type="submit" class="btn btn-fail btn-lg">전송</button>
                 <% end %>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>최근 글</h2>
+                <br>
+            </div>
+        </div>
+        <div class="row control-group">
+            <div class="form-group col-xs-12 floating-label-form-group controls">
+                <% @timelines.each do |b| %>
+                <h3><strong>[<%= b.name %>]</strong><%= b.content %></h3>
+                <%= form_tag '/comment', methos: 'post' do %>
+                <ul>
+                    <% b.comments.each do |p| %>
+                    <li><h4><strong>[<%= p.name %>]</strong><%= p.msg %></li></h4>
+                    <% end %>
 
-                <input type="hidden" name="timeline_id" value="<%= b.id %>">
-                <li><input type="text" name="msg"></li>
-                <input type="submit" value="전송">
+                    <input type="hidden" name="timeline_id" value="<%= b.id %>">
+                    <li><input class="form" type="text" name="msg" class="form-control" placeholder="댓글을 달아주세요."></li>
+
+                </ul>
+                <div class="row">
+                    <div class="form-group col-xs-12">
+                        <button type="submit" class="btn btn-fail btn-sg">전송</button>
+                    </div>
+                </div>
                 <% end %>
-            </ul>
-        </tr>
-    </td>
-    <% end %>
-</table>
+                <% end %>
+            </div>
+        </div>
+    </section>
+</div>
 <% else %>
 <header>
     <div class="container">
@@ -78,7 +106,7 @@
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>Password</label>
-                        <input type="password" class="form-control" placeholder="비밀번호" id="password" name = "password" required data-validation-required-message="Please enter your email address.">
+                        <input type="password" class="form-control" placeholder="비밀번호" id="password" name="password" required data-validation-required-message="Please enter your email address.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
@@ -140,14 +168,16 @@
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>성별</label>
-                        남자 : <input type="radio" name="gender" value="man" required data-validation-required-message="Please enter your email address.">
+                        남자 :
+                        <input type="radio" name="gender" value="man" required data-validation-required-message="Please enter your email address.">
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>
                 <div class="row control-group">
                     <div class="form-group col-xs-12 floating-label-form-group controls">
                         <label>성별</label>
-                        여자 : <input type="radio" name="gender" value="woman" required data-validation-required-message="Please enter your email address."><br>
+                        여자 :
+                        <input type="radio" name="gender" value="woman" required data-validation-required-message="Please enter your email address."><br>
                         <p class="help-block text-danger"></p>
                     </div>
                 </div>

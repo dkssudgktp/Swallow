@@ -1,0 +1,9 @@
+<br><br><br><br><br><br><br>
+<%= @user.name %>
+<%= @user.gender %>
+<%= @user.email %>
+<%= image_tag @user.profile , width:"10%", alt:"profile"%>
+<% if user_timelines? %>
+  <%= user_timelines.name %>
+  <%= user_timelines.id_num %>
+<% end %>

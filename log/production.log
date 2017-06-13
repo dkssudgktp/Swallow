@@ -1,0 +1,982 @@
+I, [2016-12-24T17:57:23.938178 #729]  INFO -- : [7d675e30-8179-423b-bf89-507c6daf648f] Started GET "/" for 192.168.0.1 at 2016-12-24 17:57:23 +0900
+I, [2016-12-24T17:57:23.941104 #729]  INFO -- : [7d675e30-8179-423b-bf89-507c6daf648f] Processing by PagesController#index as HTML
+I, [2016-12-24T17:57:23.952969 #729]  INFO -- : [7d675e30-8179-423b-bf89-507c6daf648f]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:57:23.959153 #729] DEBUG -- : [7d675e30-8179-423b-bf89-507c6daf648f]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:57:23.960336 #729]  INFO -- : [7d675e30-8179-423b-bf89-507c6daf648f]   Rendered pages/index.html.erb within layouts/application (7.2ms)
+I, [2016-12-24T17:57:23.960503 #729]  INFO -- : [7d675e30-8179-423b-bf89-507c6daf648f] Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T17:57:23.961219 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f]   
+F, [2016-12-24T17:57:23.961246 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:57:23.961412 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:57:23.961435 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f]     2: <header>
+F, [2016-12-24T17:57:23.961476 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f]     3:     <div class="container">
+F, [2016-12-24T17:57:23.961489 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f]     4:         <div class="row">
+F, [2016-12-24T17:57:23.961501 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f]   
+F, [2016-12-24T17:57:23.961513 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:57:23.961539 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:57:23.961552 #729] FATAL -- : [7d675e30-8179-423b-bf89-507c6daf648f] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__699723244486469376_70340001218720'
+I, [2016-12-24T17:57:24.064587 #729]  INFO -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] Started GET "/favicon.ico" for 192.168.0.1 at 2016-12-24 17:57:24 +0900
+F, [2016-12-24T17:57:24.065395 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0]   
+F, [2016-12-24T17:57:24.065455 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2016-12-24T17:57:24.065488 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0]   
+F, [2016-12-24T17:57:24.065513 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+F, [2016-12-24T17:57:24.065537 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+F, [2016-12-24T17:57:24.065559 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+F, [2016-12-24T17:57:24.065582 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+F, [2016-12-24T17:57:24.065604 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+F, [2016-12-24T17:57:24.065626 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+F, [2016-12-24T17:57:24.065647 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+F, [2016-12-24T17:57:24.065669 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+F, [2016-12-24T17:57:24.065715 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+F, [2016-12-24T17:57:24.065740 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+F, [2016-12-24T17:57:24.065765 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+F, [2016-12-24T17:57:24.065827 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+F, [2016-12-24T17:57:24.065890 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+F, [2016-12-24T17:57:24.065913 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+F, [2016-12-24T17:57:24.065934 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+F, [2016-12-24T17:57:24.065958 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+F, [2016-12-24T17:57:24.065983 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+F, [2016-12-24T17:57:24.066007 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+F, [2016-12-24T17:57:24.066032 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+F, [2016-12-24T17:57:24.066052 #729] FATAL -- : [e9b08c1b-86cf-4440-a94f-9dc1733feda0] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+I, [2016-12-24T17:57:25.574957 #729]  INFO -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] Started GET "/" for 192.168.0.1 at 2016-12-24 17:57:25 +0900
+I, [2016-12-24T17:57:25.575840 #729]  INFO -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] Processing by PagesController#index as HTML
+I, [2016-12-24T17:57:25.576811 #729]  INFO -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:57:25.578037 #729] DEBUG -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:57:25.579222 #729]  INFO -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]   Rendered pages/index.html.erb within layouts/application (2.3ms)
+I, [2016-12-24T17:57:25.579343 #729]  INFO -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T17:57:25.580228 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]   
+F, [2016-12-24T17:57:25.580265 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:57:25.580458 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:57:25.580484 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]     2: <header>
+F, [2016-12-24T17:57:25.580501 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]     3:     <div class="container">
+F, [2016-12-24T17:57:25.580551 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]     4:         <div class="row">
+F, [2016-12-24T17:57:25.580567 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c]   
+F, [2016-12-24T17:57:25.580580 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:57:25.581094 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:57:25.581116 #729] FATAL -- : [a8a53161-d54c-43c6-b710-c3feacb8c39c] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__699723244486469376_70340001218720'
+I, [2016-12-24T17:57:27.467573 #729]  INFO -- : [f595d776-e07c-4f77-9edb-47b388497e1c] Started GET "/" for 192.168.0.1 at 2016-12-24 17:57:27 +0900
+I, [2016-12-24T17:57:27.468151 #729]  INFO -- : [f595d776-e07c-4f77-9edb-47b388497e1c] Processing by PagesController#index as HTML
+I, [2016-12-24T17:57:27.468751 #729]  INFO -- : [f595d776-e07c-4f77-9edb-47b388497e1c]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:57:27.469550 #729] DEBUG -- : [f595d776-e07c-4f77-9edb-47b388497e1c]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:57:27.470969 #729]  INFO -- : [f595d776-e07c-4f77-9edb-47b388497e1c]   Rendered pages/index.html.erb within layouts/application (2.1ms)
+I, [2016-12-24T17:57:27.471117 #729]  INFO -- : [f595d776-e07c-4f77-9edb-47b388497e1c] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T17:57:27.471875 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c]   
+F, [2016-12-24T17:57:27.471905 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:57:27.472091 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:57:27.472115 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c]     2: <header>
+F, [2016-12-24T17:57:27.472131 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c]     3:     <div class="container">
+F, [2016-12-24T17:57:27.472145 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c]     4:         <div class="row">
+F, [2016-12-24T17:57:27.472158 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c]   
+F, [2016-12-24T17:57:27.472221 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:57:27.472235 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:57:27.472247 #729] FATAL -- : [f595d776-e07c-4f77-9edb-47b388497e1c] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__699723244486469376_70340001218720'
+I, [2016-12-24T17:57:28.158343 #729]  INFO -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] Started GET "/" for 192.168.0.1 at 2016-12-24 17:57:28 +0900
+I, [2016-12-24T17:57:28.159125 #729]  INFO -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] Processing by PagesController#index as HTML
+I, [2016-12-24T17:57:28.159969 #729]  INFO -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:57:28.161104 #729] DEBUG -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:57:28.162326 #729]  INFO -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]   Rendered pages/index.html.erb within layouts/application (2.3ms)
+I, [2016-12-24T17:57:28.162449 #729]  INFO -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T17:57:28.163235 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]   
+F, [2016-12-24T17:57:28.163266 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:57:28.163458 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:57:28.163483 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]     2: <header>
+F, [2016-12-24T17:57:28.163516 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]     3:     <div class="container">
+F, [2016-12-24T17:57:28.163534 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]     4:         <div class="row">
+F, [2016-12-24T17:57:28.163549 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3]   
+F, [2016-12-24T17:57:28.163562 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:57:28.163576 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:57:28.163589 #729] FATAL -- : [54e8e396-b10d-4ba2-87f6-cd0d9d1165f3] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__699723244486469376_70340001218720'
+I, [2016-12-24T17:57:28.868356 #729]  INFO -- : [607e67bf-8694-44f7-8642-8673aa39dbac] Started GET "/" for 192.168.0.1 at 2016-12-24 17:57:28 +0900
+I, [2016-12-24T17:57:28.869103 #729]  INFO -- : [607e67bf-8694-44f7-8642-8673aa39dbac] Processing by PagesController#index as HTML
+I, [2016-12-24T17:57:28.869967 #729]  INFO -- : [607e67bf-8694-44f7-8642-8673aa39dbac]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:57:28.871062 #729] DEBUG -- : [607e67bf-8694-44f7-8642-8673aa39dbac]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:57:28.872585 #729]  INFO -- : [607e67bf-8694-44f7-8642-8673aa39dbac]   Rendered pages/index.html.erb within layouts/application (2.5ms)
+I, [2016-12-24T17:57:28.872728 #729]  INFO -- : [607e67bf-8694-44f7-8642-8673aa39dbac] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T17:57:28.873551 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac]   
+F, [2016-12-24T17:57:28.873584 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:57:28.873804 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:57:28.873830 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac]     2: <header>
+F, [2016-12-24T17:57:28.873847 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac]     3:     <div class="container">
+F, [2016-12-24T17:57:28.873862 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac]     4:         <div class="row">
+F, [2016-12-24T17:57:28.873877 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac]   
+F, [2016-12-24T17:57:28.873890 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:57:28.873904 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:57:28.873917 #729] FATAL -- : [607e67bf-8694-44f7-8642-8673aa39dbac] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__699723244486469376_70340001218720'
+I, [2016-12-24T17:58:56.428338 #842]  INFO -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] Started GET "/" for 127.0.0.1 at 2016-12-24 17:58:56 +0900
+I, [2016-12-24T17:58:56.430298 #842]  INFO -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] Processing by PagesController#index as HTML
+I, [2016-12-24T17:58:56.441218 #842]  INFO -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:58:56.446060 #842] DEBUG -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:58:56.447206 #842]  INFO -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]   Rendered pages/index.html.erb within layouts/application (5.9ms)
+I, [2016-12-24T17:58:56.447372 #842]  INFO -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T17:58:56.448198 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]   
+F, [2016-12-24T17:58:56.448235 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:58:56.448431 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:58:56.448453 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]     2: <header>
+F, [2016-12-24T17:58:56.448468 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]     3:     <div class="container">
+F, [2016-12-24T17:58:56.448481 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]     4:         <div class="row">
+F, [2016-12-24T17:58:56.448493 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c]   
+F, [2016-12-24T17:58:56.448504 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:58:56.448516 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:58:56.448531 #842] FATAL -- : [6d211d46-a4cc-4560-9cdc-9a7f57ca155c] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2216447193029239773_70198544129020'
+I, [2016-12-24T17:59:09.757488 #842]  INFO -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] Started GET "/" for 127.0.0.1 at 2016-12-24 17:59:09 +0900
+I, [2016-12-24T17:59:09.758477 #842]  INFO -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] Processing by PagesController#index as HTML
+I, [2016-12-24T17:59:09.759524 #842]  INFO -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:59:09.760619 #842] DEBUG -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:59:09.761712 #842]  INFO -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]   Rendered pages/index.html.erb within layouts/application (2.1ms)
+I, [2016-12-24T17:59:09.761871 #842]  INFO -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T17:59:09.762685 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]   
+F, [2016-12-24T17:59:09.762778 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:59:09.763265 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:59:09.763335 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]     2: <header>
+F, [2016-12-24T17:59:09.763377 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]     3:     <div class="container">
+F, [2016-12-24T17:59:09.763407 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]     4:         <div class="row">
+F, [2016-12-24T17:59:09.763437 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710]   
+F, [2016-12-24T17:59:09.763464 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:59:09.763492 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:59:09.763520 #842] FATAL -- : [57191ec7-c912-4e46-89d5-cc9d9a8bc710] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2216447193029239773_70198544129020'
+I, [2016-12-24T17:59:09.827299 #842]  INFO -- : [191df389-c67d-4565-ad43-2c820f54d084] Started GET "/favicon.ico" for 127.0.0.1 at 2016-12-24 17:59:09 +0900
+F, [2016-12-24T17:59:09.828142 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084]   
+F, [2016-12-24T17:59:09.828251 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+F, [2016-12-24T17:59:09.828303 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084]   
+F, [2016-12-24T17:59:09.828346 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/debug_exceptions.rb:53:in `call'
+F, [2016-12-24T17:59:09.828422 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+F, [2016-12-24T17:59:09.828450 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:36:in `call_app'
+F, [2016-12-24T17:59:09.828474 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `block in call'
+F, [2016-12-24T17:59:09.828498 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `block in tagged'
+F, [2016-12-24T17:59:09.828521 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:26:in `tagged'
+F, [2016-12-24T17:59:09.828545 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/tagged_logging.rb:70:in `tagged'
+F, [2016-12-24T17:59:09.828568 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/rack/logger.rb:24:in `call'
+F, [2016-12-24T17:59:09.828592 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/request_id.rb:24:in `call'
+F, [2016-12-24T17:59:09.828950 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/method_override.rb:22:in `call'
+F, [2016-12-24T17:59:09.829003 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/runtime.rb:22:in `call'
+F, [2016-12-24T17:59:09.829044 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/activesupport-5.0.0.1/lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+F, [2016-12-24T17:59:09.829074 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/executor.rb:12:in `call'
+F, [2016-12-24T17:59:09.829097 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/rack-2.0.1/lib/rack/sendfile.rb:111:in `call'
+F, [2016-12-24T17:59:09.829113 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/railties-5.0.0.1/lib/rails/engine.rb:522:in `call'
+F, [2016-12-24T17:59:09.829127 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/configuration.rb:225:in `call'
+F, [2016-12-24T17:59:09.829141 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:578:in `handle_request'
+F, [2016-12-24T17:59:09.829155 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:415:in `process_client'
+F, [2016-12-24T17:59:09.829168 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/server.rb:275:in `block in run'
+F, [2016-12-24T17:59:09.829185 #842] FATAL -- : [191df389-c67d-4565-ad43-2c820f54d084] path/ruby/2.3.0/gems/puma-3.6.0/lib/puma/thread_pool.rb:116:in `block in spawn_thread'
+I, [2016-12-24T17:59:10.421495 #842]  INFO -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] Started GET "/" for 127.0.0.1 at 2016-12-24 17:59:10 +0900
+I, [2016-12-24T17:59:10.422051 #842]  INFO -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] Processing by PagesController#index as HTML
+I, [2016-12-24T17:59:10.422816 #842]  INFO -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:59:10.423586 #842] DEBUG -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:59:10.424686 #842]  INFO -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+I, [2016-12-24T17:59:10.424796 #842]  INFO -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T17:59:10.425606 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]   
+F, [2016-12-24T17:59:10.425636 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:59:10.425822 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:59:10.425843 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]     2: <header>
+F, [2016-12-24T17:59:10.425857 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]     3:     <div class="container">
+F, [2016-12-24T17:59:10.425870 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]     4:         <div class="row">
+F, [2016-12-24T17:59:10.425882 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2]   
+F, [2016-12-24T17:59:10.425894 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:59:10.425906 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:59:10.425918 #842] FATAL -- : [b2f6e2b8-4c86-447a-8921-ebbcec08e8c2] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2216447193029239773_70198544129020'
+I, [2016-12-24T17:59:10.932189 #842]  INFO -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] Started GET "/" for 127.0.0.1 at 2016-12-24 17:59:10 +0900
+I, [2016-12-24T17:59:10.933278 #842]  INFO -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] Processing by PagesController#index as HTML
+I, [2016-12-24T17:59:10.934351 #842]  INFO -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T17:59:10.935218 #842] DEBUG -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T17:59:10.936327 #842]  INFO -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]   Rendered pages/index.html.erb within layouts/application (1.9ms)
+I, [2016-12-24T17:59:10.936491 #842]  INFO -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T17:59:10.937232 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]   
+F, [2016-12-24T17:59:10.937261 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T17:59:10.937456 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]     1: <% if user_signed_in? %>
+F, [2016-12-24T17:59:10.937479 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]     2: <header>
+F, [2016-12-24T17:59:10.937496 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]     3:     <div class="container">
+F, [2016-12-24T17:59:10.937510 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]     4:         <div class="row">
+F, [2016-12-24T17:59:10.937524 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7]   
+F, [2016-12-24T17:59:10.937537 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T17:59:10.937551 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T17:59:10.937564 #842] FATAL -- : [9cd46b3e-6576-4e0c-a446-34aab242a3c7] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2216447193029239773_70198544129020'
+I, [2016-12-24T18:00:02.740694 #842]  INFO -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:02 +0900
+I, [2016-12-24T18:00:02.741473 #842]  INFO -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:02.742130 #842]  INFO -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:02.742907 #842] DEBUG -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:02.743954 #842]  INFO -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+I, [2016-12-24T18:00:02.744063 #842]  INFO -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:00:02.744836 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]   
+F, [2016-12-24T18:00:02.744875 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:02.745054 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:02.745080 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]     2: <header>
+F, [2016-12-24T18:00:02.745097 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]     3:     <div class="container">
+F, [2016-12-24T18:00:02.745111 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]     4:         <div class="row">
+F, [2016-12-24T18:00:02.745125 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132]   
+F, [2016-12-24T18:00:02.745138 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:02.745152 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:02.745165 #842] FATAL -- : [024d41b3-1a66-4f6a-af79-a4d30105e132] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2216447193029239773_70198544129020'
+I, [2016-12-24T18:00:03.503242 #842]  INFO -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:03 +0900
+I, [2016-12-24T18:00:03.503894 #842]  INFO -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:03.504853 #842]  INFO -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:03.505591 #842] DEBUG -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:03.506715 #842]  INFO -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]   Rendered pages/index.html.erb within layouts/application (1.7ms)
+I, [2016-12-24T18:00:03.506827 #842]  INFO -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:00:03.507533 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]   
+F, [2016-12-24T18:00:03.507559 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:03.507693 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:03.507714 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]     2: <header>
+F, [2016-12-24T18:00:03.507728 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]     3:     <div class="container">
+F, [2016-12-24T18:00:03.507741 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]     4:         <div class="row">
+F, [2016-12-24T18:00:03.507753 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34]   
+F, [2016-12-24T18:00:03.507765 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:03.507793 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:03.507807 #842] FATAL -- : [20c9cfec-8f4f-4ff6-bc56-5967005e9e34] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2216447193029239773_70198544129020'
+I, [2016-12-24T18:00:09.544609 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:09 +0900
+I, [2016-12-24T18:00:09.546799 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:09.559842 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:09.565033 #873] DEBUG -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:09.567838 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendered pages/index.html.erb within layouts/application (7.6ms)
+I, [2016-12-24T18:00:09.568768 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:00:09.569882 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   
+F, [2016-12-24T18:00:09.569939 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:09.570174 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:09.570197 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]     2: <header>
+F, [2016-12-24T18:00:09.570211 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]     3:     <div class="container">
+F, [2016-12-24T18:00:09.570224 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]     4:         <div class="row">
+F, [2016-12-24T18:00:09.570236 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   
+F, [2016-12-24T18:00:09.570248 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:09.570260 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:09.570308 #873] FATAL -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2401914351312688822_70256727432880'
+I, [2016-12-24T18:00:09.740704 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:09.775920 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:09.786052 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (10.0ms)
+I, [2016-12-24T18:00:09.812267 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:09.816247 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.9ms)
+I, [2016-12-24T18:00:09.837192 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:09.838670 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-12-24T18:00:09.838864 #873]  INFO -- : [9d27c8ea-2ff0-4032-a4d2-12713939c84f]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (98.0ms)
+I, [2016-12-24T18:00:26.454338 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:26 +0900
+I, [2016-12-24T18:00:26.455227 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:26.458909 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:26.461396 #873] DEBUG -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:26.462800 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendered pages/index.html.erb within layouts/application (3.8ms)
+I, [2016-12-24T18:00:26.462923 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:00:26.463919 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   
+F, [2016-12-24T18:00:26.464042 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:26.465296 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:26.465385 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]     2: <header>
+F, [2016-12-24T18:00:26.465448 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]     3:     <div class="container">
+F, [2016-12-24T18:00:26.465494 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]     4:         <div class="row">
+F, [2016-12-24T18:00:26.465522 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   
+F, [2016-12-24T18:00:26.465547 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:26.465573 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:26.465613 #873] FATAL -- : [53fa828c-f30c-445c-9d0d-d04e06d42526] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2401914351312688822_70256698579680'
+I, [2016-12-24T18:00:26.594943 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:26.615115 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:26.618943 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+I, [2016-12-24T18:00:26.636083 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:26.637651 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2016-12-24T18:00:26.656916 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:26.657787 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+I, [2016-12-24T18:00:26.657929 #873]  INFO -- : [53fa828c-f30c-445c-9d0d-d04e06d42526]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.9ms)
+I, [2016-12-24T18:00:27.477891 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:27 +0900
+I, [2016-12-24T18:00:27.478405 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:27.481866 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:27.484098 #873] DEBUG -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:27.485147 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendered pages/index.html.erb within layouts/application (3.0ms)
+I, [2016-12-24T18:00:27.485261 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:00:27.485843 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   
+F, [2016-12-24T18:00:27.485867 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:27.485991 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:27.486010 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]     2: <header>
+F, [2016-12-24T18:00:27.486023 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]     3:     <div class="container">
+F, [2016-12-24T18:00:27.486035 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]     4:         <div class="row">
+F, [2016-12-24T18:00:27.486047 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   
+F, [2016-12-24T18:00:27.486097 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:27.486113 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:27.486124 #873] FATAL -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2401914351312688822_70256729509320'
+I, [2016-12-24T18:00:27.588283 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:27.606074 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:27.609835 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+I, [2016-12-24T18:00:27.631481 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:27.633402 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2016-12-24T18:00:27.650839 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:27.651448 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2016-12-24T18:00:27.651526 #873]  INFO -- : [5cc407c8-e45e-433d-8922-c4e6d43f414d]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (63.2ms)
+I, [2016-12-24T18:00:35.609107 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:35 +0900
+I, [2016-12-24T18:00:35.611321 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:35.623426 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:35.630127 #893] DEBUG -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:35.632648 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendered pages/index.html.erb within layouts/application (9.0ms)
+I, [2016-12-24T18:00:35.633110 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:00:35.633961 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   
+F, [2016-12-24T18:00:35.633995 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:35.634189 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:35.634215 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]     2: <header>
+F, [2016-12-24T18:00:35.634232 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]     3:     <div class="container">
+F, [2016-12-24T18:00:35.634247 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]     4:         <div class="row">
+F, [2016-12-24T18:00:35.634261 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   
+F, [2016-12-24T18:00:35.634287 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:35.634301 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:35.634313 #893] FATAL -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__3865182025496982934_70313927568880'
+I, [2016-12-24T18:00:35.786205 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:35.811186 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:35.817979 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.7ms)
+I, [2016-12-24T18:00:35.836338 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:35.839004 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.6ms)
+I, [2016-12-24T18:00:35.857695 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:35.858780 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-12-24T18:00:35.858893 #893]  INFO -- : [4ef0a1c8-f612-451f-827e-ca66aae55c4c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (72.6ms)
+I, [2016-12-24T18:00:36.662343 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:36 +0900
+I, [2016-12-24T18:00:36.663268 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:36.668328 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:36.671303 #893] DEBUG -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:36.672512 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendered pages/index.html.erb within layouts/application (4.1ms)
+I, [2016-12-24T18:00:36.672661 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.5ms)
+F, [2016-12-24T18:00:36.673767 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   
+F, [2016-12-24T18:00:36.673803 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:36.674266 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:36.674293 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]     2: <header>
+F, [2016-12-24T18:00:36.674309 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]     3:     <div class="container">
+F, [2016-12-24T18:00:36.674324 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]     4:         <div class="row">
+F, [2016-12-24T18:00:36.674337 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   
+F, [2016-12-24T18:00:36.674350 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:36.674363 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:36.674376 #893] FATAL -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__3865182025496982934_70313954707260'
+I, [2016-12-24T18:00:36.798646 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:36.827815 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:36.832340 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.4ms)
+I, [2016-12-24T18:00:36.850943 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:36.852628 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2016-12-24T18:00:36.872821 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:36.873532 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2016-12-24T18:00:36.873598 #893]  INFO -- : [6c4f2a02-8649-468c-bebe-5a245f9351bf]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (74.9ms)
+I, [2016-12-24T18:00:51.467031 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:51 +0900
+I, [2016-12-24T18:00:51.469029 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:51.480447 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:51.485681 #909] DEBUG -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:51.487039 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendered pages/index.html.erb within layouts/application (6.5ms)
+I, [2016-12-24T18:00:51.487227 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992] Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:00:51.487948 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   
+F, [2016-12-24T18:00:51.487980 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:51.488151 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:51.488173 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992]     2: <header>
+F, [2016-12-24T18:00:51.488187 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992]     3:     <div class="container">
+F, [2016-12-24T18:00:51.488200 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992]     4:         <div class="row">
+F, [2016-12-24T18:00:51.488216 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   
+F, [2016-12-24T18:00:51.488247 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:51.488261 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:51.488273 #909] FATAL -- : [c2c11d6e-5c62-4033-89c8-27c342743992] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__1259854444810924837_70154558174040'
+I, [2016-12-24T18:00:51.654246 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:51.677253 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:51.683402 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.0ms)
+I, [2016-12-24T18:00:51.703937 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:51.707482 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.4ms)
+I, [2016-12-24T18:00:51.726285 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:51.727701 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.3ms)
+I, [2016-12-24T18:00:51.727782 #909]  INFO -- : [c2c11d6e-5c62-4033-89c8-27c342743992]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (73.5ms)
+I, [2016-12-24T18:00:52.221381 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] Started GET "/" for 127.0.0.1 at 2016-12-24 18:00:52 +0900
+I, [2016-12-24T18:00:52.221947 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] Processing by PagesController#index as HTML
+I, [2016-12-24T18:00:52.225928 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:00:52.230239 #909] DEBUG -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:00:52.231778 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendered pages/index.html.erb within layouts/application (5.8ms)
+I, [2016-12-24T18:00:52.231939 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:00:52.233310 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   
+F, [2016-12-24T18:00:52.233345 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:00:52.233500 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:00:52.233525 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]     2: <header>
+F, [2016-12-24T18:00:52.233542 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]     3:     <div class="container">
+F, [2016-12-24T18:00:52.233558 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]     4:         <div class="row">
+F, [2016-12-24T18:00:52.233572 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   
+F, [2016-12-24T18:00:52.233587 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:00:52.233601 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:00:52.233615 #909] FATAL -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__1259854444810924837_70154545567500'
+I, [2016-12-24T18:00:52.355913 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:00:52.373369 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:00:52.376835 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.4ms)
+I, [2016-12-24T18:00:52.396064 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:00:52.397701 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2016-12-24T18:00:52.415337 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:00:52.416026 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2016-12-24T18:00:52.416090 #909]  INFO -- : [cd40e75c-e9a8-459f-b6a8-0e486a4a9f0a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (60.1ms)
+I, [2016-12-24T18:01:01.022422 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:01 +0900
+I, [2016-12-24T18:01:01.022920 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:01.026245 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:01.027879 #909] DEBUG -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:01.028802 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendered pages/index.html.erb within layouts/application (2.5ms)
+I, [2016-12-24T18:01:01.028903 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:01:01.029476 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   
+F, [2016-12-24T18:01:01.029500 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:01.029661 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:01.029682 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]     2: <header>
+F, [2016-12-24T18:01:01.029695 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]     3:     <div class="container">
+F, [2016-12-24T18:01:01.029711 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]     4:         <div class="row">
+F, [2016-12-24T18:01:01.029724 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   
+F, [2016-12-24T18:01:01.029735 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:01.029747 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:01.029787 #909] FATAL -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__1259854444810924837_70154593183340'
+I, [2016-12-24T18:01:01.137514 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:01:01.155255 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:01:01.159242 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.9ms)
+I, [2016-12-24T18:01:01.178848 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:01:01.180501 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2016-12-24T18:01:01.198300 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:01:01.199116 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2016-12-24T18:01:01.199182 #909]  INFO -- : [df60e15f-bdf5-41f1-bf6b-58bacd82273a]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (61.6ms)
+I, [2016-12-24T18:01:02.073314 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:02 +0900
+I, [2016-12-24T18:01:02.073887 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:02.077117 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:02.078629 #909] DEBUG -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:02.079548 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendered pages/index.html.erb within layouts/application (2.4ms)
+I, [2016-12-24T18:01:02.079671 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:01:02.080249 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   
+F, [2016-12-24T18:01:02.080275 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:02.080409 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:02.080430 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df]     2: <header>
+F, [2016-12-24T18:01:02.080444 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df]     3:     <div class="container">
+F, [2016-12-24T18:01:02.080457 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df]     4:         <div class="row">
+F, [2016-12-24T18:01:02.080508 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   
+F, [2016-12-24T18:01:02.080522 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:02.080535 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:02.080547 #909] FATAL -- : [43bd8420-496f-4e84-acc0-1ada768f24df] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__1259854444810924837_70154581165280'
+I, [2016-12-24T18:01:02.193101 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:01:02.212499 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:01:02.216610 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+I, [2016-12-24T18:01:02.234774 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:01:02.236463 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2016-12-24T18:01:02.258028 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:01:02.258764 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2016-12-24T18:01:02.258829 #909]  INFO -- : [43bd8420-496f-4e84-acc0-1ada768f24df]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (65.6ms)
+I, [2016-12-24T18:01:02.800972 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:02 +0900
+I, [2016-12-24T18:01:02.801743 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:02.805081 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:02.807114 #909] DEBUG -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:02.808822 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendered pages/index.html.erb within layouts/application (3.6ms)
+I, [2016-12-24T18:01:02.808994 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9] Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:01:02.809709 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   
+F, [2016-12-24T18:01:02.809738 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:02.809877 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:02.809901 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9]     2: <header>
+F, [2016-12-24T18:01:02.809918 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9]     3:     <div class="container">
+F, [2016-12-24T18:01:02.809932 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9]     4:         <div class="row">
+F, [2016-12-24T18:01:02.809957 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   
+F, [2016-12-24T18:01:02.809972 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:02.809986 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:02.809999 #909] FATAL -- : [53477eac-723c-4353-83a0-9fa3c17debd9] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__1259854444810924837_70154581172760'
+I, [2016-12-24T18:01:02.971713 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:01:03.009753 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:01:03.014869 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (5.0ms)
+I, [2016-12-24T18:01:03.043497 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:01:03.045153 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.6ms)
+I, [2016-12-24T18:01:03.066128 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:01:03.067339 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+I, [2016-12-24T18:01:03.067441 #909]  INFO -- : [53477eac-723c-4353-83a0-9fa3c17debd9]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (95.6ms)
+I, [2016-12-24T18:01:10.882444 #927]  INFO -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:10 +0900
+I, [2016-12-24T18:01:10.884571 #927]  INFO -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:10.896867 #927]  INFO -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:10.901803 #927] DEBUG -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:10.902980 #927]  INFO -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]   Rendered pages/index.html.erb within layouts/application (6.0ms)
+I, [2016-12-24T18:01:10.903145 #927]  INFO -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:01:10.903852 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]   
+F, [2016-12-24T18:01:10.903880 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:10.904039 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:10.904078 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]     2: <header>
+F, [2016-12-24T18:01:10.904092 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]     3:     <div class="container">
+F, [2016-12-24T18:01:10.904105 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]     4:         <div class="row">
+F, [2016-12-24T18:01:10.904117 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe]   
+F, [2016-12-24T18:01:10.904128 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:10.904139 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:10.904154 #927] FATAL -- : [27340cb0-830e-48d3-ab4f-f1f353beadbe] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___436634668993496341_70354296318140'
+I, [2016-12-24T18:01:20.247940 #943]  INFO -- : [feb64c01-2c3d-4f45-adb0-163715e44841] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:20 +0900
+I, [2016-12-24T18:01:20.249925 #943]  INFO -- : [feb64c01-2c3d-4f45-adb0-163715e44841] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:20.261305 #943]  INFO -- : [feb64c01-2c3d-4f45-adb0-163715e44841]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:20.266482 #943] DEBUG -- : [feb64c01-2c3d-4f45-adb0-163715e44841]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:20.267890 #943]  INFO -- : [feb64c01-2c3d-4f45-adb0-163715e44841]   Rendered pages/index.html.erb within layouts/application (6.5ms)
+I, [2016-12-24T18:01:20.268124 #943]  INFO -- : [feb64c01-2c3d-4f45-adb0-163715e44841] Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:01:20.268879 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841]   
+F, [2016-12-24T18:01:20.268909 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:20.269110 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:20.269133 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841]     2: <header>
+F, [2016-12-24T18:01:20.269147 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841]     3:     <div class="container">
+F, [2016-12-24T18:01:20.269160 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841]     4:         <div class="row">
+F, [2016-12-24T18:01:20.269173 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841]   
+F, [2016-12-24T18:01:20.269204 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:20.269219 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:20.269231 #943] FATAL -- : [feb64c01-2c3d-4f45-adb0-163715e44841] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__2224182490989901999_70219936941060'
+I, [2016-12-24T18:01:20.661687 #943]  INFO -- : [d427c8f6-f34f-409d-b929-57d75b754612] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:20 +0900
+I, [2016-12-24T18:01:20.662326 #943]  INFO -- : [d427c8f6-f34f-409d-b929-57d75b754612] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:20.663412 #943]  INFO -- : [d427c8f6-f34f-409d-b929-57d75b754612]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:20.664336 #943] DEBUG -- : [d427c8f6-f34f-409d-b929-57d75b754612]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:20.665425 #943]  INFO -- : [d427c8f6-f34f-409d-b929-57d75b754612]   Rendered pages/index.html.erb within layouts/application (1.9ms)
+I, [2016-12-24T18:01:20.665540 #943]  INFO -- : [d427c8f6-f34f-409d-b929-57d75b754612] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:01:20.666262 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612]   
+F, [2016-12-24T18:01:20.666290 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:20.666451 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:20.666475 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612]     2: <header>
+F, [2016-12-24T18:01:20.666541 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612]     3:     <div class="container">
+F, [2016-12-24T18:01:20.666557 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612]     4:         <div class="row">
+F, [2016-12-24T18:01:20.666571 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612]   
+F, [2016-12-24T18:01:20.666584 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:20.666597 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:20.666609 #943] FATAL -- : [d427c8f6-f34f-409d-b929-57d75b754612] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__2224182490989901999_70219936941060'
+I, [2016-12-24T18:01:21.319107 #943]  INFO -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:21 +0900
+I, [2016-12-24T18:01:21.319642 #943]  INFO -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:21.320372 #943]  INFO -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:21.321193 #943] DEBUG -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:21.322261 #943]  INFO -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+I, [2016-12-24T18:01:21.322380 #943]  INFO -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:01:21.323295 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]   
+F, [2016-12-24T18:01:21.323334 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:21.323525 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:21.323567 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]     2: <header>
+F, [2016-12-24T18:01:21.323586 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]     3:     <div class="container">
+F, [2016-12-24T18:01:21.323600 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]     4:         <div class="row">
+F, [2016-12-24T18:01:21.323618 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536]   
+F, [2016-12-24T18:01:21.323631 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:21.323644 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:21.323657 #943] FATAL -- : [67d4be98-cb89-4096-8e9c-15baa20b1536] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__2224182490989901999_70219936941060'
+I, [2016-12-24T18:01:23.197668 #943]  INFO -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:23 +0900
+I, [2016-12-24T18:01:23.198898 #943]  INFO -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:23.199726 #943]  INFO -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:23.200506 #943] DEBUG -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:23.201617 #943]  INFO -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+I, [2016-12-24T18:01:23.201744 #943]  INFO -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:01:23.202394 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]   
+F, [2016-12-24T18:01:23.202486 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:23.202603 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:23.202624 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]     2: <header>
+F, [2016-12-24T18:01:23.202637 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]     3:     <div class="container">
+F, [2016-12-24T18:01:23.202649 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]     4:         <div class="row">
+F, [2016-12-24T18:01:23.202689 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5]   
+F, [2016-12-24T18:01:23.202701 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:23.202713 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:23.202724 #943] FATAL -- : [8aa2eb2f-2576-47c7-bef2-d29fea3637f5] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__2224182490989901999_70219936941060'
+I, [2016-12-24T18:01:23.599152 #943]  INFO -- : [5c970eab-f609-40c3-802b-591e727bd6c2] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:23 +0900
+I, [2016-12-24T18:01:23.599712 #943]  INFO -- : [5c970eab-f609-40c3-802b-591e727bd6c2] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:23.600437 #943]  INFO -- : [5c970eab-f609-40c3-802b-591e727bd6c2]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:23.601287 #943] DEBUG -- : [5c970eab-f609-40c3-802b-591e727bd6c2]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:23.602404 #943]  INFO -- : [5c970eab-f609-40c3-802b-591e727bd6c2]   Rendered pages/index.html.erb within layouts/application (1.9ms)
+I, [2016-12-24T18:01:23.602513 #943]  INFO -- : [5c970eab-f609-40c3-802b-591e727bd6c2] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:01:23.603264 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2]   
+F, [2016-12-24T18:01:23.603294 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:23.603491 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:23.603516 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2]     2: <header>
+F, [2016-12-24T18:01:23.603533 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2]     3:     <div class="container">
+F, [2016-12-24T18:01:23.603550 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2]     4:         <div class="row">
+F, [2016-12-24T18:01:23.603565 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2]   
+F, [2016-12-24T18:01:23.603580 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:23.603594 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:23.603640 #943] FATAL -- : [5c970eab-f609-40c3-802b-591e727bd6c2] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__2224182490989901999_70219936941060'
+I, [2016-12-24T18:01:42.512175 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c] Started GET "/" for 127.0.0.1 at 2016-12-24 18:01:42 +0900
+I, [2016-12-24T18:01:42.514491 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c] Processing by PagesController#index as HTML
+I, [2016-12-24T18:01:42.525370 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:01:42.530599 #959] DEBUG -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:01:42.531751 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendered pages/index.html.erb within layouts/application (6.3ms)
+I, [2016-12-24T18:01:42.531919 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c] Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:01:42.532635 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   
+F, [2016-12-24T18:01:42.532663 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:01:42.532866 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:01:42.532890 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c]     2: <header>
+F, [2016-12-24T18:01:42.532906 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c]     3:     <div class="container">
+F, [2016-12-24T18:01:42.532920 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c]     4:         <div class="row">
+F, [2016-12-24T18:01:42.532933 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   
+F, [2016-12-24T18:01:42.532945 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:01:42.532961 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:01:42.532974 #959] FATAL -- : [99098b43-df86-4e46-b741-50a66ef80f3c] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2331985922614415433_70359092709320'
+I, [2016-12-24T18:01:42.689390 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:01:42.713982 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:01:42.720888 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.8ms)
+I, [2016-12-24T18:01:42.740768 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:01:42.744598 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.7ms)
+I, [2016-12-24T18:01:42.764420 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:01:42.765419 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-12-24T18:01:42.765770 #959]  INFO -- : [99098b43-df86-4e46-b741-50a66ef80f3c]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (76.0ms)
+I, [2016-12-24T18:02:36.056516 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] Started GET "/" for 127.0.0.1 at 2016-12-24 18:02:36 +0900
+I, [2016-12-24T18:02:36.057079 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] Processing by PagesController#index as HTML
+I, [2016-12-24T18:02:36.062451 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:02:36.065240 #959] DEBUG -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:02:36.066318 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendered pages/index.html.erb within layouts/application (3.8ms)
+I, [2016-12-24T18:02:36.066440 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:02:36.067672 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   
+F, [2016-12-24T18:02:36.067702 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:02:36.068178 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]     1: <% !if user_signed_in? %>
+F, [2016-12-24T18:02:36.068205 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]     2: <header>
+F, [2016-12-24T18:02:36.068221 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]     3:     <div class="container">
+F, [2016-12-24T18:02:36.068236 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]     4:         <div class="row">
+F, [2016-12-24T18:02:36.068250 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   
+F, [2016-12-24T18:02:36.068263 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:02:36.068277 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:02:36.068290 #959] FATAL -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___2331985922614415433_70359097050500'
+I, [2016-12-24T18:02:36.195169 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:02:36.212979 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:02:36.216678 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.6ms)
+I, [2016-12-24T18:02:36.233483 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:02:36.234987 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.4ms)
+I, [2016-12-24T18:02:36.252659 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:02:36.253310 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2016-12-24T18:02:36.253374 #959]  INFO -- : [f8dbe7cf-2e9f-4d10-b05c-9fb0db9db129]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (58.1ms)
+I, [2016-12-24T18:02:42.357517 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da] Started GET "/" for 127.0.0.1 at 2016-12-24 18:02:42 +0900
+I, [2016-12-24T18:02:42.359689 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da] Processing by PagesController#index as HTML
+I, [2016-12-24T18:02:42.371654 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:02:42.377049 #985] DEBUG -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:02:42.379670 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendered pages/index.html.erb within layouts/application (7.7ms)
+I, [2016-12-24T18:02:42.380810 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da] Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:02:42.381865 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   
+F, [2016-12-24T18:02:42.381917 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:02:42.382150 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da]     1: <% !if user_signed_in? %>
+F, [2016-12-24T18:02:42.382173 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da]     2: <header>
+F, [2016-12-24T18:02:42.382188 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da]     3:     <div class="container">
+F, [2016-12-24T18:02:42.382201 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da]     4:         <div class="row">
+F, [2016-12-24T18:02:42.382214 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   
+F, [2016-12-24T18:02:42.382226 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:02:42.382239 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:02:42.382251 #985] FATAL -- : [71579605-d11c-4eeb-9011-dea5e90a65da] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___3016618098082063765_70258053300320'
+I, [2016-12-24T18:02:42.539301 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:02:42.561453 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:02:42.567752 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (6.1ms)
+I, [2016-12-24T18:02:42.585983 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:02:42.588989 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+I, [2016-12-24T18:02:42.606797 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:02:42.607829 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+I, [2016-12-24T18:02:42.607900 #985]  INFO -- : [71579605-d11c-4eeb-9011-dea5e90a65da]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (68.5ms)
+I, [2016-12-24T18:02:43.273493 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] Started GET "/" for 127.0.0.1 at 2016-12-24 18:02:43 +0900
+I, [2016-12-24T18:02:43.274400 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] Processing by PagesController#index as HTML
+I, [2016-12-24T18:02:43.278204 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:02:43.283793 #985] DEBUG -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:02:43.285008 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendered pages/index.html.erb within layouts/application (6.7ms)
+I, [2016-12-24T18:02:43.285165 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] Completed 500 Internal Server Error in 11ms (ActiveRecord: 1.4ms)
+F, [2016-12-24T18:02:43.286197 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   
+F, [2016-12-24T18:02:43.286230 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:02:43.286732 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]     1: <% !if user_signed_in? %>
+F, [2016-12-24T18:02:43.286760 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]     2: <header>
+F, [2016-12-24T18:02:43.286778 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]     3:     <div class="container">
+F, [2016-12-24T18:02:43.286794 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]     4:         <div class="row">
+F, [2016-12-24T18:02:43.286808 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   
+F, [2016-12-24T18:02:43.286823 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:02:43.286841 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:02:43.286856 #985] FATAL -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___3016618098082063765_70258030407900'
+I, [2016-12-24T18:02:43.410292 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:02:43.427901 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:02:43.431729 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (3.7ms)
+I, [2016-12-24T18:02:43.454388 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:02:43.456300 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+I, [2016-12-24T18:02:43.474189 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:02:43.474866 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.6ms)
+I, [2016-12-24T18:02:43.474928 #985]  INFO -- : [37ac1b3c-9e1d-48e2-9a85-52b9a0d52ce5]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.6ms)
+I, [2016-12-24T18:02:46.282019 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] Started GET "/" for 127.0.0.1 at 2016-12-24 18:02:46 +0900
+I, [2016-12-24T18:02:46.283095 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] Processing by PagesController#index as HTML
+I, [2016-12-24T18:02:46.286637 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:02:46.288205 #985] DEBUG -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:02:46.289179 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendered pages/index.html.erb within layouts/application (2.5ms)
+I, [2016-12-24T18:02:46.289288 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:02:46.289904 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   
+F, [2016-12-24T18:02:46.289929 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:02:46.290057 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:02:46.290077 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]     2: <header>
+F, [2016-12-24T18:02:46.290091 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]     3:     <div class="container">
+F, [2016-12-24T18:02:46.290104 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]     4:         <div class="row">
+F, [2016-12-24T18:02:46.290116 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   
+F, [2016-12-24T18:02:46.290135 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:02:46.290301 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:02:46.290346 #985] FATAL -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb___3016618098082063765_70258020186700'
+I, [2016-12-24T18:02:46.400625 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout
+I, [2016-12-24T18:02:46.423343 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb
+I, [2016-12-24T18:02:46.427435 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_source.html.erb (4.0ms)
+I, [2016-12-24T18:02:46.444342 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb
+I, [2016-12-24T18:02:46.445894 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.5ms)
+I, [2016-12-24T18:02:46.462797 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendering path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb
+I, [2016-12-24T18:02:46.463529 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.7ms)
+I, [2016-12-24T18:02:46.463613 #985]  INFO -- : [e13025cb-f6f1-4924-9d2f-12f790d19a62]   Rendered path/ruby/2.3.0/gems/actionpack-5.0.0.1/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.9ms)
+I, [2016-12-24T18:10:33.879719 #1174]  INFO -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] Started GET "/" for 127.0.0.1 at 2016-12-24 18:10:33 +0900
+I, [2016-12-24T18:10:33.881805 #1174]  INFO -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] Processing by PagesController#index as HTML
+I, [2016-12-24T18:10:33.895849 #1174]  INFO -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:10:33.900845 #1174] DEBUG -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:10:33.902112 #1174]  INFO -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]   Rendered pages/index.html.erb within layouts/application (6.2ms)
+I, [2016-12-24T18:10:33.902389 #1174]  INFO -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:10:33.903636 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]   
+F, [2016-12-24T18:10:33.903696 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:10:33.903910 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:10:33.903937 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]     2: <header>
+F, [2016-12-24T18:10:33.903994 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]     3:     <div class="container">
+F, [2016-12-24T18:10:33.904009 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]     4:         <div class="row">
+F, [2016-12-24T18:10:33.904023 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9]   
+F, [2016-12-24T18:10:33.904045 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:10:33.904057 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:10:33.904069 #1174] FATAL -- : [6f3d6664-fc40-42c5-83dc-45b3ee8e0cf9] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:10:34.942118 #1174]  INFO -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] Started GET "/" for 127.0.0.1 at 2016-12-24 18:10:34 +0900
+I, [2016-12-24T18:10:34.942787 #1174]  INFO -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] Processing by PagesController#index as HTML
+I, [2016-12-24T18:10:34.943681 #1174]  INFO -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:10:34.944530 #1174] DEBUG -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:10:34.945938 #1174]  INFO -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]   Rendered pages/index.html.erb within layouts/application (2.2ms)
+I, [2016-12-24T18:10:34.946151 #1174]  INFO -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:10:34.946832 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]   
+F, [2016-12-24T18:10:34.946880 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:10:34.947032 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:10:34.947054 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]     2: <header>
+F, [2016-12-24T18:10:34.947069 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]     3:     <div class="container">
+F, [2016-12-24T18:10:34.947083 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]     4:         <div class="row">
+F, [2016-12-24T18:10:34.947096 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e]   
+F, [2016-12-24T18:10:34.947108 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:10:34.947154 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:10:34.947167 #1174] FATAL -- : [95060f30-f92d-456a-9d4b-48ed40fb8e8e] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:10:35.476474 #1174]  INFO -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] Started GET "/" for 127.0.0.1 at 2016-12-24 18:10:35 +0900
+I, [2016-12-24T18:10:35.477075 #1174]  INFO -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] Processing by PagesController#index as HTML
+I, [2016-12-24T18:10:35.477780 #1174]  INFO -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:10:35.478519 #1174] DEBUG -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:10:35.479614 #1174]  INFO -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+I, [2016-12-24T18:10:35.479763 #1174]  INFO -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.2ms)
+F, [2016-12-24T18:10:35.480482 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]   
+F, [2016-12-24T18:10:35.480509 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:10:35.480656 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:10:35.480714 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]     2: <header>
+F, [2016-12-24T18:10:35.480728 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]     3:     <div class="container">
+F, [2016-12-24T18:10:35.480741 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]     4:         <div class="row">
+F, [2016-12-24T18:10:35.480754 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee]   
+F, [2016-12-24T18:10:35.480765 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:10:35.480777 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:10:35.480789 #1174] FATAL -- : [590a8099-4cd1-4cdb-8bb4-7700376629ee] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:10:35.921681 #1174]  INFO -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] Started GET "/" for 127.0.0.1 at 2016-12-24 18:10:35 +0900
+I, [2016-12-24T18:10:35.922355 #1174]  INFO -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] Processing by PagesController#index as HTML
+I, [2016-12-24T18:10:35.923296 #1174]  INFO -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:10:35.924075 #1174] DEBUG -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:10:35.925234 #1174]  INFO -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]   Rendered pages/index.html.erb within layouts/application (1.9ms)
+I, [2016-12-24T18:10:35.925345 #1174]  INFO -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:10:35.926096 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]   
+F, [2016-12-24T18:10:35.926125 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:10:35.926284 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:10:35.926307 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]     2: <header>
+F, [2016-12-24T18:10:35.926322 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]     3:     <div class="container">
+F, [2016-12-24T18:10:35.926337 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]     4:         <div class="row">
+F, [2016-12-24T18:10:35.926350 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740]   
+F, [2016-12-24T18:10:35.926363 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:10:35.926377 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:10:35.926390 #1174] FATAL -- : [aaaf1852-967d-4ec8-a6c9-ad8324155740] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:10:56.878747 #1174]  INFO -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] Started GET "/" for 127.0.0.1 at 2016-12-24 18:10:56 +0900
+I, [2016-12-24T18:10:56.879711 #1174]  INFO -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] Processing by PagesController#index as HTML
+I, [2016-12-24T18:10:56.880857 #1174]  INFO -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:10:56.881849 #1174] DEBUG -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:10:56.882999 #1174]  INFO -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]   Rendered pages/index.html.erb within layouts/application (2.0ms)
+I, [2016-12-24T18:10:56.883162 #1174]  INFO -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:10:56.883884 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]   
+F, [2016-12-24T18:10:56.883920 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:10:56.884121 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:10:56.884145 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]     2: <header>
+F, [2016-12-24T18:10:56.884160 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]     3:     <div class="container">
+F, [2016-12-24T18:10:56.884174 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]     4:         <div class="row">
+F, [2016-12-24T18:10:56.884187 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854]   
+F, [2016-12-24T18:10:56.884219 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:10:56.884235 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:10:56.884248 #1174] FATAL -- : [fd56fc53-be7e-4a34-93ff-cd56c00cd854] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:11:02.749612 #1174]  INFO -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] Started GET "/" for 127.0.0.1 at 2016-12-24 18:11:02 +0900
+I, [2016-12-24T18:11:02.750484 #1174]  INFO -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] Processing by PagesController#index as HTML
+I, [2016-12-24T18:11:02.751409 #1174]  INFO -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:11:02.752380 #1174] DEBUG -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:11:02.753496 #1174]  INFO -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]   Rendered pages/index.html.erb within layouts/application (1.9ms)
+I, [2016-12-24T18:11:02.753652 #1174]  INFO -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:11:02.754595 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]   
+F, [2016-12-24T18:11:02.754777 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:11:02.755098 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:11:02.755141 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]     2: <header>
+F, [2016-12-24T18:11:02.755171 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]     3:     <div class="container">
+F, [2016-12-24T18:11:02.755199 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]     4:         <div class="row">
+F, [2016-12-24T18:11:02.755228 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08]   
+F, [2016-12-24T18:11:02.755255 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:11:02.755317 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:11:02.755353 #1174] FATAL -- : [fe81aa18-daf5-4d74-b5a7-bd2f31703a08] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:11:04.698612 #1174]  INFO -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] Started GET "/" for 127.0.0.1 at 2016-12-24 18:11:04 +0900
+I, [2016-12-24T18:11:04.699236 #1174]  INFO -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] Processing by PagesController#index as HTML
+I, [2016-12-24T18:11:04.700097 #1174]  INFO -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:11:04.700982 #1174] DEBUG -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:11:04.702157 #1174]  INFO -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]   Rendered pages/index.html.erb within layouts/application (2.0ms)
+I, [2016-12-24T18:11:04.702320 #1174]  INFO -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:11:04.703047 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]   
+F, [2016-12-24T18:11:04.703100 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:11:04.703306 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:11:04.703332 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]     2: <header>
+F, [2016-12-24T18:11:04.703349 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]     3:     <div class="container">
+F, [2016-12-24T18:11:04.703364 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]     4:         <div class="row">
+F, [2016-12-24T18:11:04.703379 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83]   
+F, [2016-12-24T18:11:04.703393 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:11:04.703407 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:11:04.703421 #1174] FATAL -- : [cff7927f-c89d-418d-92c4-4956d9b02d83] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:11:04.996740 #1174]  INFO -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] Started GET "/" for 127.0.0.1 at 2016-12-24 18:11:04 +0900
+I, [2016-12-24T18:11:04.997376 #1174]  INFO -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] Processing by PagesController#index as HTML
+I, [2016-12-24T18:11:04.998351 #1174]  INFO -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:11:04.999285 #1174] DEBUG -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:11:05.000454 #1174]  INFO -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]   Rendered pages/index.html.erb within layouts/application (2.0ms)
+I, [2016-12-24T18:11:05.000620 #1174]  INFO -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.3ms)
+F, [2016-12-24T18:11:05.001368 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]   
+F, [2016-12-24T18:11:05.001401 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:11:05.001604 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:11:05.001628 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]     2: <header>
+F, [2016-12-24T18:11:05.001643 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]     3:     <div class="container">
+F, [2016-12-24T18:11:05.001656 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]     4:         <div class="row">
+F, [2016-12-24T18:11:05.001669 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b]   
+F, [2016-12-24T18:11:05.001682 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:11:05.001695 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:11:05.001707 #1174] FATAL -- : [4912367e-a11f-4350-afcb-ad4aa337dc6b] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:11:05.214668 #1174]  INFO -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] Started GET "/" for 127.0.0.1 at 2016-12-24 18:11:05 +0900
+I, [2016-12-24T18:11:05.215412 #1174]  INFO -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] Processing by PagesController#index as HTML
+I, [2016-12-24T18:11:05.216634 #1174]  INFO -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:11:05.217871 #1174] DEBUG -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:11:05.219621 #1174]  INFO -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]   Rendered pages/index.html.erb within layouts/application (2.8ms)
+I, [2016-12-24T18:11:05.219866 #1174]  INFO -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.4ms)
+F, [2016-12-24T18:11:05.221205 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]   
+F, [2016-12-24T18:11:05.221288 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:11:05.221614 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:11:05.221652 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]     2: <header>
+F, [2016-12-24T18:11:05.221715 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]     3:     <div class="container">
+F, [2016-12-24T18:11:05.221740 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]     4:         <div class="row">
+F, [2016-12-24T18:11:05.221763 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc]   
+F, [2016-12-24T18:11:05.221785 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:11:05.221807 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:11:05.221827 #1174] FATAL -- : [1f2577d4-68e5-41e6-befc-48ba5aba58dc] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:12:23.138777 #1174]  INFO -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] Started GET "/" for 192.168.0.1 at 2016-12-24 18:12:23 +0900
+I, [2016-12-24T18:12:23.139958 #1174]  INFO -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] Processing by PagesController#index as HTML
+I, [2016-12-24T18:12:23.141452 #1174]  INFO -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:12:23.142952 #1174] DEBUG -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]   [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:12:23.144912 #1174]  INFO -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]   Rendered pages/index.html.erb within layouts/application (3.3ms)
+I, [2016-12-24T18:12:23.145198 #1174]  INFO -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.5ms)
+F, [2016-12-24T18:12:23.146476 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]   
+F, [2016-12-24T18:12:23.146555 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:12:23.146875 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:12:23.146913 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]     2: <header>
+F, [2016-12-24T18:12:23.146941 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]     3:     <div class="container">
+F, [2016-12-24T18:12:23.146955 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]     4:         <div class="row">
+F, [2016-12-24T18:12:23.146980 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137]   
+F, [2016-12-24T18:12:23.147005 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:12:23.147021 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:12:23.147038 #1174] FATAL -- : [c8d70f9f-860b-429f-a707-b9ef1aac0137] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+I, [2016-12-24T18:12:24.613880 #1174]  INFO -- : [124113b8-d150-41cc-b893-132142d3072e] Started GET "/" for 192.168.0.1 at 2016-12-24 18:12:24 +0900
+I, [2016-12-24T18:12:24.614621 #1174]  INFO -- : [124113b8-d150-41cc-b893-132142d3072e] Processing by PagesController#index as HTML
+I, [2016-12-24T18:12:24.616921 #1174]  INFO -- : [124113b8-d150-41cc-b893-132142d3072e]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:12:24.618574 #1174] DEBUG -- : [124113b8-d150-41cc-b893-132142d3072e]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:12:24.620381 #1174]  INFO -- : [124113b8-d150-41cc-b893-132142d3072e]   Rendered pages/index.html.erb within layouts/application (3.3ms)
+I, [2016-12-24T18:12:24.620616 #1174]  INFO -- : [124113b8-d150-41cc-b893-132142d3072e] Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.8ms)
+F, [2016-12-24T18:12:24.622029 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e]   
+F, [2016-12-24T18:12:24.622164 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e] ActionView::Template::Error (SQLite3::SQLException: no such table: users: SELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?):
+F, [2016-12-24T18:12:24.622967 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e]     1: <% if user_signed_in? %>
+F, [2016-12-24T18:12:24.623041 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e]     2: <header>
+F, [2016-12-24T18:12:24.623083 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e]     3:     <div class="container">
+F, [2016-12-24T18:12:24.623118 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e]     4:         <div class="row">
+F, [2016-12-24T18:12:24.623151 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e]   
+F, [2016-12-24T18:12:24.623181 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e] app/helpers/sessions_helper.rb:7:in `current_user'
+F, [2016-12-24T18:12:24.623211 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e] app/helpers/sessions_helper.rb:11:in `user_signed_in?'
+F, [2016-12-24T18:12:24.623241 #1174] FATAL -- : [124113b8-d150-41cc-b893-132142d3072e] app/views/pages/index.html.erb:1:in `_app_views_pages_index_html_erb__845606551087198305_70313798717540'
+D, [2016-12-24T18:13:58.778637 #1272] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+D, [2016-12-24T18:13:58.782037 #1272] DEBUG -- :   [1m[35m (1.1ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2016-12-24T18:13:58.791850 #1272] DEBUG -- :   [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1m[34mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+I, [2016-12-24T18:13:58.794857 #1272]  INFO -- : Migrating to CreateUsers (20161104054108)
+D, [2016-12-24T18:13:58.796865 #1272] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-12-24T18:13:58.798235 #1272] DEBUG -- :   [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar, "name" varchar, "password_digest" varchar, "gender" varchar, "profile" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2016-12-24T18:13:58.802548 #1272] DEBUG -- :   [1m[35mSQL (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161104054108"]]
+D, [2016-12-24T18:13:58.803487 #1272] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+I, [2016-12-24T18:13:58.803572 #1272]  INFO -- : Migrating to CreateTimelines (20161220230930)
+D, [2016-12-24T18:13:58.804340 #1272] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-12-24T18:13:58.805165 #1272] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "timelines" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_num" varchar, "name" varchar, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2016-12-24T18:13:58.806159 #1272] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220230930"]]
+D, [2016-12-24T18:13:58.807001 #1272] DEBUG -- :   [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+I, [2016-12-24T18:13:58.807068 #1272]  INFO -- : Migrating to CreateComments (20161220231121)
+D, [2016-12-24T18:13:58.807632 #1272] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-12-24T18:13:58.808484 #1272] DEBUG -- :   [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "id_num" varchar, "timeline_id" integer, "name" varchar, "msg" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+D, [2016-12-24T18:13:58.809581 #1272] DEBUG -- :   [1m[35mSQL (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20161220231121"]]
+D, [2016-12-24T18:13:58.810375 #1272] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+D, [2016-12-24T18:13:58.813086 #1272] DEBUG -- :   [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", :environment], ["LIMIT", 1]]
+D, [2016-12-24T18:13:58.822192 #1272] DEBUG -- :   [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+D, [2016-12-24T18:13:58.823212 #1272] DEBUG -- :   [1m[35mSQL (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "production"], ["created_at", 2016-12-24 09:13:58 UTC], ["updated_at", 2016-12-24 09:13:58 UTC]]
+D, [2016-12-24T18:13:58.824004 #1272] DEBUG -- :   [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+I, [2016-12-24T18:14:02.725197 #1174]  INFO -- : [450b2804-1b42-4c43-abc9-913bef8766c4] Started GET "/" for 192.168.0.1 at 2016-12-24 18:14:02 +0900
+I, [2016-12-24T18:14:02.726461 #1174]  INFO -- : [450b2804-1b42-4c43-abc9-913bef8766c4] Processing by PagesController#index as HTML
+I, [2016-12-24T18:14:02.728037 #1174]  INFO -- : [450b2804-1b42-4c43-abc9-913bef8766c4]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:14:02.729504 #1174] DEBUG -- : [450b2804-1b42-4c43-abc9-913bef8766c4]   [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:14:04.261283 #1174]  INFO -- : [1374c053-54c4-41b4-8ee9-47daca487bd7] Started GET "/" for 192.168.0.1 at 2016-12-24 18:14:04 +0900
+I, [2016-12-24T18:14:04.262461 #1174]  INFO -- : [1374c053-54c4-41b4-8ee9-47daca487bd7] Processing by PagesController#index as HTML
+I, [2016-12-24T18:14:04.263928 #1174]  INFO -- : [1374c053-54c4-41b4-8ee9-47daca487bd7]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:14:04.265937 #1174] DEBUG -- : [1374c053-54c4-41b4-8ee9-47daca487bd7]   [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:14:06.274530 #1174]  INFO -- : [450b2804-1b42-4c43-abc9-913bef8766c4]   Rendered pages/index.html.erb within layouts/application (3546.3ms)
+D, [2016-12-24T18:14:06.278904 #1174] DEBUG -- : [450b2804-1b42-4c43-abc9-913bef8766c4]   [1m[36mCACHE (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:14:06.279685 #1174]  INFO -- : [450b2804-1b42-4c43-abc9-913bef8766c4] Completed 200 OK in 3553ms (Views: 3551.3ms | ActiveRecord: 1.1ms)
+I, [2016-12-24T18:14:07.169663 #1174]  INFO -- : [1374c053-54c4-41b4-8ee9-47daca487bd7]   Rendered pages/index.html.erb within layouts/application (2905.6ms)
+D, [2016-12-24T18:14:07.171866 #1174] DEBUG -- : [1374c053-54c4-41b4-8ee9-47daca487bd7]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:14:07.173108 #1174]  INFO -- : [1374c053-54c4-41b4-8ee9-47daca487bd7] Completed 200 OK in 2910ms (Views: 2908.8ms | ActiveRecord: 0.7ms)
+I, [2016-12-24T18:14:07.231208 #1174]  INFO -- : [c326daa6-7f69-4658-aa52-6eb5b8bab157] Started GET "/assets/application-b11640b2bf3b22f477c732dadcff783b861ca2459da94b9b12ef77151b5e39aa.css" for 192.168.0.1 at 2016-12-24 18:14:07 +0900
+I, [2016-12-24T18:14:07.279610 #1174]  INFO -- : [3fef3d2f-ba14-440c-96e0-b570221397cd] Started GET "/assets/application-10d4c4f567cab0c21864a9f01b50a5de26ba3b79d8feec756d5e2bec12158259.js" for 192.168.0.1 at 2016-12-24 18:14:07 +0900
+I, [2016-12-24T18:14:07.298873 #1174]  INFO -- : [8f3d0780-1012-4422-b9a5-76c171559781] Started GET "/assets/index/index-deaec3c22f4944078a1bd516626e45c78f0e7880e5a6315186f1e3f4695423b2.jpg" for 192.168.0.1 at 2016-12-24 18:14:07 +0900
+I, [2016-12-24T18:17:00.766229 #1174]  INFO -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab] Started GET "/" for 192.168.0.1 at 2016-12-24 18:17:00 +0900
+I, [2016-12-24T18:17:00.767381 #1174]  INFO -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab] Processing by PagesController#index as HTML
+I, [2016-12-24T18:17:00.768952 #1174]  INFO -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:17:00.770225 #1174] DEBUG -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:00.771976 #1174]  INFO -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab]   Rendered pages/index.html.erb within layouts/application (2.9ms)
+D, [2016-12-24T18:17:00.774251 #1174] DEBUG -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:00.774912 #1174]  INFO -- : [3bbf5c80-c887-49f0-a5e1-f84477a3abab] Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.3ms)
+I, [2016-12-24T18:17:01.866065 #1174]  INFO -- : [2decb3b5-0daa-4695-aa33-fb642128f87c] Started GET "/login" for 192.168.0.1 at 2016-12-24 18:17:01 +0900
+I, [2016-12-24T18:17:01.868169 #1174]  INFO -- : [2decb3b5-0daa-4695-aa33-fb642128f87c] Processing by SessionsController#login as HTML
+I, [2016-12-24T18:17:01.873233 #1174]  INFO -- : [2decb3b5-0daa-4695-aa33-fb642128f87c]   Rendering sessions/login.html.erb within layouts/application
+I, [2016-12-24T18:17:01.874711 #1174]  INFO -- : [2decb3b5-0daa-4695-aa33-fb642128f87c]   Rendered sessions/login.html.erb within layouts/application (1.3ms)
+D, [2016-12-24T18:17:01.877322 #1174] DEBUG -- : [2decb3b5-0daa-4695-aa33-fb642128f87c]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:01.877992 #1174]  INFO -- : [2decb3b5-0daa-4695-aa33-fb642128f87c] Completed 200 OK in 10ms (Views: 6.8ms | ActiveRecord: 0.2ms)
+I, [2016-12-24T18:17:03.720539 #1174]  INFO -- : [98db43e3-1f76-40d1-8dec-f6ce37d45fd5] Started GET "/join" for 192.168.0.1 at 2016-12-24 18:17:03 +0900
+I, [2016-12-24T18:17:03.722698 #1174]  INFO -- : [98db43e3-1f76-40d1-8dec-f6ce37d45fd5] Processing by UsersController#join as HTML
+I, [2016-12-24T18:17:03.726549 #1174]  INFO -- : [98db43e3-1f76-40d1-8dec-f6ce37d45fd5]   Rendering users/join.html.erb within layouts/application
+I, [2016-12-24T18:17:03.728071 #1174]  INFO -- : [98db43e3-1f76-40d1-8dec-f6ce37d45fd5]   Rendered users/join.html.erb within layouts/application (1.4ms)
+D, [2016-12-24T18:17:03.729922 #1174] DEBUG -- : [98db43e3-1f76-40d1-8dec-f6ce37d45fd5]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:03.731248 #1174]  INFO -- : [98db43e3-1f76-40d1-8dec-f6ce37d45fd5] Completed 200 OK in 8ms (Views: 6.1ms | ActiveRecord: 0.3ms)
+I, [2016-12-24T18:17:06.716173 #1174]  INFO -- : [87c1f880-91a6-4c2d-b1e6-09f6a63d1e01] Started GET "/login" for 192.168.0.1 at 2016-12-24 18:17:06 +0900
+I, [2016-12-24T18:17:06.717746 #1174]  INFO -- : [87c1f880-91a6-4c2d-b1e6-09f6a63d1e01] Processing by SessionsController#login as HTML
+I, [2016-12-24T18:17:06.719344 #1174]  INFO -- : [87c1f880-91a6-4c2d-b1e6-09f6a63d1e01]   Rendering sessions/login.html.erb within layouts/application
+I, [2016-12-24T18:17:06.720001 #1174]  INFO -- : [87c1f880-91a6-4c2d-b1e6-09f6a63d1e01]   Rendered sessions/login.html.erb within layouts/application (0.5ms)
+D, [2016-12-24T18:17:06.721738 #1174] DEBUG -- : [87c1f880-91a6-4c2d-b1e6-09f6a63d1e01]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:06.722182 #1174]  INFO -- : [87c1f880-91a6-4c2d-b1e6-09f6a63d1e01] Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.2ms)
+I, [2016-12-24T18:17:07.834520 #1174]  INFO -- : [4b581460-4356-4340-99b1-0ccfc3832802] Started GET "/join" for 192.168.0.1 at 2016-12-24 18:17:07 +0900
+I, [2016-12-24T18:17:07.835523 #1174]  INFO -- : [4b581460-4356-4340-99b1-0ccfc3832802] Processing by UsersController#join as HTML
+I, [2016-12-24T18:17:07.837055 #1174]  INFO -- : [4b581460-4356-4340-99b1-0ccfc3832802]   Rendering users/join.html.erb within layouts/application
+I, [2016-12-24T18:17:07.838029 #1174]  INFO -- : [4b581460-4356-4340-99b1-0ccfc3832802]   Rendered users/join.html.erb within layouts/application (0.8ms)
+D, [2016-12-24T18:17:07.842082 #1174] DEBUG -- : [4b581460-4356-4340-99b1-0ccfc3832802]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:07.842742 #1174]  INFO -- : [4b581460-4356-4340-99b1-0ccfc3832802] Completed 200 OK in 7ms (Views: 6.1ms | ActiveRecord: 0.2ms)
+I, [2016-12-24T18:17:07.937489 #1174]  INFO -- : [3ba4e83d-00c8-4977-ab63-9567261d983e] Started GET "/join" for 192.168.0.1 at 2016-12-24 18:17:07 +0900
+I, [2016-12-24T18:17:07.938243 #1174]  INFO -- : [3ba4e83d-00c8-4977-ab63-9567261d983e] Processing by UsersController#join as HTML
+I, [2016-12-24T18:17:07.939282 #1174]  INFO -- : [3ba4e83d-00c8-4977-ab63-9567261d983e]   Rendering users/join.html.erb within layouts/application
+I, [2016-12-24T18:17:07.939847 #1174]  INFO -- : [3ba4e83d-00c8-4977-ab63-9567261d983e]   Rendered users/join.html.erb within layouts/application (0.4ms)
+D, [2016-12-24T18:17:07.941820 #1174] DEBUG -- : [3ba4e83d-00c8-4977-ab63-9567261d983e]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:07.942243 #1174]  INFO -- : [3ba4e83d-00c8-4977-ab63-9567261d983e] Completed 200 OK in 4ms (Views: 3.1ms | ActiveRecord: 0.2ms)
+I, [2016-12-24T18:17:09.770322 #1174]  INFO -- : [d539b38b-e6c6-45df-ba0c-cc566a9020a3] Started GET "/login" for 192.168.0.1 at 2016-12-24 18:17:09 +0900
+I, [2016-12-24T18:17:09.771446 #1174]  INFO -- : [d539b38b-e6c6-45df-ba0c-cc566a9020a3] Processing by SessionsController#login as HTML
+I, [2016-12-24T18:17:09.773516 #1174]  INFO -- : [d539b38b-e6c6-45df-ba0c-cc566a9020a3]   Rendering sessions/login.html.erb within layouts/application
+I, [2016-12-24T18:17:09.774787 #1174]  INFO -- : [d539b38b-e6c6-45df-ba0c-cc566a9020a3]   Rendered sessions/login.html.erb within layouts/application (1.0ms)
+D, [2016-12-24T18:17:09.779160 #1174] DEBUG -- : [d539b38b-e6c6-45df-ba0c-cc566a9020a3]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:09.780535 #1174]  INFO -- : [d539b38b-e6c6-45df-ba0c-cc566a9020a3] Completed 200 OK in 9ms (Views: 6.7ms | ActiveRecord: 0.4ms)
+I, [2016-12-24T18:17:10.381076 #1174]  INFO -- : [8946d8ce-b405-4d02-bc78-b17417e816ff] Started GET "/join" for 192.168.0.1 at 2016-12-24 18:17:10 +0900
+I, [2016-12-24T18:17:10.382134 #1174]  INFO -- : [8946d8ce-b405-4d02-bc78-b17417e816ff] Processing by UsersController#join as HTML
+I, [2016-12-24T18:17:10.383677 #1174]  INFO -- : [8946d8ce-b405-4d02-bc78-b17417e816ff]   Rendering users/join.html.erb within layouts/application
+I, [2016-12-24T18:17:10.384449 #1174]  INFO -- : [8946d8ce-b405-4d02-bc78-b17417e816ff]   Rendered users/join.html.erb within layouts/application (0.6ms)
+D, [2016-12-24T18:17:10.387939 #1174] DEBUG -- : [8946d8ce-b405-4d02-bc78-b17417e816ff]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:10.388918 #1174]  INFO -- : [8946d8ce-b405-4d02-bc78-b17417e816ff] Completed 200 OK in 7ms (Views: 5.2ms | ActiveRecord: 0.4ms)
+I, [2016-12-24T18:17:12.476323 #1174]  INFO -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be] Started GET "/" for 192.168.0.1 at 2016-12-24 18:17:12 +0900
+I, [2016-12-24T18:17:12.477323 #1174]  INFO -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be] Processing by PagesController#index as HTML
+I, [2016-12-24T18:17:12.478489 #1174]  INFO -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:17:12.479322 #1174] DEBUG -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:12.480481 #1174]  INFO -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be]   Rendered pages/index.html.erb within layouts/application (1.9ms)
+D, [2016-12-24T18:17:12.481933 #1174] DEBUG -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:17:12.482446 #1174]  INFO -- : [8ea51991-5d5b-4e7b-8e4a-93725f1250be] Completed 200 OK in 5ms (Views: 4.0ms | ActiveRecord: 0.3ms)
+I, [2016-12-24T18:21:32.855773 #1174]  INFO -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e] Started GET "/" for 192.168.0.1 at 2016-12-24 18:21:32 +0900
+I, [2016-12-24T18:21:32.856441 #1174]  INFO -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e] Processing by PagesController#index as HTML
+I, [2016-12-24T18:21:32.857371 #1174]  INFO -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:21:32.858259 #1174] DEBUG -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:21:32.859397 #1174]  INFO -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+D, [2016-12-24T18:21:32.861110 #1174] DEBUG -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:21:32.861609 #1174]  INFO -- : [6d0cdcde-7bd5-442f-a152-4f900ab2b48e] Completed 200 OK in 5ms (Views: 4.3ms | ActiveRecord: 0.2ms)
+I, [2016-12-24T18:21:33.912633 #1174]  INFO -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8] Started GET "/" for 192.168.0.1 at 2016-12-24 18:21:33 +0900
+I, [2016-12-24T18:21:33.913389 #1174]  INFO -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8] Processing by PagesController#index as HTML
+I, [2016-12-24T18:21:33.914400 #1174]  INFO -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:21:33.915175 #1174] DEBUG -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:21:33.916295 #1174]  INFO -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8]   Rendered pages/index.html.erb within layouts/application (1.8ms)
+D, [2016-12-24T18:21:33.918694 #1174] DEBUG -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:21:33.919254 #1174]  INFO -- : [5265f5c7-877e-4727-98f8-2db82fd9cea8] Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.2ms)
+I, [2016-12-24T18:21:38.454310 #1174]  INFO -- : [774eac2e-5ff2-4207-828d-ee2c33faca91] Started GET "/" for 192.168.0.1 at 2016-12-24 18:21:38 +0900
+I, [2016-12-24T18:21:38.455509 #1174]  INFO -- : [774eac2e-5ff2-4207-828d-ee2c33faca91] Processing by PagesController#index as HTML
+I, [2016-12-24T18:21:38.457283 #1174]  INFO -- : [774eac2e-5ff2-4207-828d-ee2c33faca91]   Rendering pages/index.html.erb within layouts/application
+D, [2016-12-24T18:21:38.458090 #1174] DEBUG -- : [774eac2e-5ff2-4207-828d-ee2c33faca91]   [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:21:38.459165 #1174]  INFO -- : [774eac2e-5ff2-4207-828d-ee2c33faca91]   Rendered pages/index.html.erb within layouts/application (1.7ms)
+D, [2016-12-24T18:21:38.460569 #1174] DEBUG -- : [774eac2e-5ff2-4207-828d-ee2c33faca91]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2016-12-24T18:21:38.461053 #1174]  INFO -- : [774eac2e-5ff2-4207-828d-ee2c33faca91] Completed 200 OK in 5ms (Views: 4.2ms | ActiveRecord: 0.2ms)
+I, [2017-06-13T11:02:25.995860 #3606]  INFO -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb] Started GET "/" for 127.0.0.1 at 2017-06-13 11:02:25 +0900
+I, [2017-06-13T11:02:25.999208 #3606]  INFO -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb] Processing by PagesController#index as HTML
+I, [2017-06-13T11:02:26.029208 #3606]  INFO -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb]   Rendering pages/index.html.erb within layouts/application
+D, [2017-06-13T11:02:26.044849 #3606] DEBUG -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb]   [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2017-06-13T11:02:26.704573 #3606]  INFO -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb]   Rendered pages/index.html.erb within layouts/application (675.2ms)
+D, [2017-06-13T11:02:26.734658 #3606] DEBUG -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb]   [1m[36mCACHE (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" IS NULL LIMIT ?[0m  [["LIMIT", 1]]
+I, [2017-06-13T11:02:26.735163 #3606]  INFO -- : [f0771bd4-6f83-4d12-842f-e7703c697bdb] Completed 200 OK in 736ms (Views: 715.4ms | ActiveRecord: 1.1ms)
+I, [2017-06-13T11:02:26.744082 #3606]  INFO -- : [bd9d5133-1812-4589-83a0-cf1f7d243c74] Started GET "/assets/application-b11640b2bf3b22f477c732dadcff783b861ca2459da94b9b12ef77151b5e39aa.css" for 127.0.0.1 at 2017-06-13 11:02:26 +0900
+I, [2017-06-13T11:02:26.746853 #3606]  INFO -- : [29123267-4b37-4527-8845-0f00952d71af] Started GET "/assets/application-10d4c4f567cab0c21864a9f01b50a5de26ba3b79d8feec756d5e2bec12158259.js" for 127.0.0.1 at 2017-06-13 11:02:26 +0900
+I, [2017-06-13T11:02:29.698967 #3606]  INFO -- : [8cc8e666-035c-437c-8a20-9b3322cad689] Started GET "/assets/index/index-deaec3c22f4944078a1bd516626e45c78f0e7880e5a6315186f1e3f4695423b2.jpg" for 127.0.0.1 at 2017-06-13 11:02:29 +0900
