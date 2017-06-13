@@ -1,2 +1,1 @@
-web: bundle exec rails server -p 60005
-
+web: bundle exec rails server -e production -p 3000
